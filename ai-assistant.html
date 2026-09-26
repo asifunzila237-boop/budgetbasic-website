@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant | BudgetBasics</title>
+
+    <link rel="stylesheet" href="ai-assistant.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                 alt="BudgetBasics Logo">
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="ai-assistant.html" class="active">
+                    AI Assistant
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="nav-btn">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= MOBILE SIDEBAR ================= -->
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="sidebar-logo">
+            BudgetBasics
+        </div>
+
+        <button id="closeSidebar">
+            ×
+        </button>
+
+    </div>
+
+    <ul class="sidebar-links">
+
+        <li>
+            <a href="index.html">
+                <span>Home</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="learn.html">
+                <span>Learn Budgeting</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="calculators.html">
+                <span>Calculators</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="mistakes.html">
+                <span>Money Mistakes</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ai-assistant.html">
+                <span>AI Assistant</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                <span>Contact Us</span>
+                <span>›</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="sidebar-footer">
+        <p>Learn. Plan. Grow.</p>
+    </div>
+
+</aside>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="small-label">
+                ✦ SMART MONEY SUPPORT
+            </span>
+
+            <h1>
+                Your Personal
+                <span>Money Assistant</span>
+            </h1>
+
+            <p>
+                Get simple explanations, budgeting ideas, saving tips,
+                and practical guidance to help you make better everyday
+                money decisions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#assistant" class="primary-btn">
+                    Ask a Question
+                </a>
+
+                <a href="#tips" class="secondary-btn">
+                    Explore Tips
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI VISUAL -->
+
+        <div class="ai-visual">
+
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+
+            <div class="assistant-card">
+
+                <div class="assistant-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    BudgetBasics AI
+                </h3>
+
+                <p>
+                    Ready to help you understand your money.
+                </p>
+
+                <div class="status">
+                    <span></span>
+                    Assistant Ready
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro-section">
+
+    <div class="section-heading">
+
+        <span>HOW IT HELPS</span>
+
+        <h2>
+            Make Money Topics Easier
+        </h2>
+
+        <p>
+            Money can sometimes feel complicated. BudgetBasics keeps
+            financial concepts simple, practical, and easy to understand.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <h3>
+                Budgeting Help
+            </h3>
+
+            <p>
+                Understand how to organize income, expenses, savings,
+                and everyday spending.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>
+                Spending Guidance
+            </h3>
+
+            <p>
+                Learn how to think about your spending and separate
+                important expenses from unnecessary purchases.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🎯
+            </div>
+
+            <h3>
+                Savings Goals
+            </h3>
+
+            <p>
+                Turn your savings ideas into simple and understandable
+                goals.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💡
+            </div>
+
+            <h3>
+                Simple Explanations
+            </h3>
+
+            <p>
+                Ask questions about basic financial concepts and
+                receive easy-to-follow explanations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ASSISTANT ================= -->
+
+<section class="assistant-section" id="assistant">
+
+    <div class="assistant-container">
+
+        <div class="assistant-left">
+
+            <span class="small-label">
+                ASK BUDGETBASICS
+            </span>
+
+            <h2>
+                What Would You Like
+                <span>To Learn?</span>
+            </h2>
+
+            <p>
+                Select a topic below or type your own question.
+                This demo assistant provides basic financial-learning
+                guidance.
+            </p>
+
+            <div class="question-buttons">
+
+                <button class="question-btn"
+                        data-question="How can I create a simple budget?">
+                    💰 How can I create a budget?
+                </button>
+
+                <button class="question-btn"
+                        data-question="How can I save money every month?">
+                    🏦 How can I save money?
+                </button>
+
+                <button class="question-btn"
+                        data-question="What is the difference between needs and wants?">
+                    🛒 Needs vs Wants?
+                </button>
+
+                <button class="question-btn"
+                        data-question="How can I avoid unnecessary spending?">
+                    📉 Avoid unnecessary spending?
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHAT BOX -->
+
+        <div class="chat-box">
+
+            <div class="chat-header">
+
+                <div class="chat-profile">
+                    <div class="chat-avatar">
+                        ✦
+                    </div>
+
+                    <div>
+                        <h3>BudgetBasics Assistant</h3>
+                        <span>Basic financial learning</span>
+                    </div>
+                </div>
+
+                <span class="online-dot"></span>
+
+            </div>
+
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message bot-message">
+
+                    <div class="message-avatar">
+                        ✦
+                    </div>
+
+                    <div class="message-content">
+                        Hello! 👋
+                        <br><br>
+                        I'm here to help you understand basic
+                        budgeting and money concepts.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask a money question..."
+                    autocomplete="off"
+                >
+
+                <button id="sendBtn">
+                    ➤
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TIPS ================= -->
+
+<section class="tips-section" id="tips">
+
+    <div class="section-heading">
+
+        <span>SMART MONEY HABITS</span>
+
+        <h2>
+            Quick Financial Tips
+        </h2>
+
+        <p>
+            Small habits can make everyday money management easier.
+        </p>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+
+            <span class="tip-number">01</span>
+
+            <div class="tip-icon">
+                📝
+            </div>
+
+            <h3>
+                Track Your Spending
+            </h3>
+
+            <p>
+                Keep a record of where your money goes so you can
+                understand your spending habits.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <span class="tip-number">02</span>
+
+            <div class="tip-icon">
+                🏦
+            </div>
+
+            <h3>
+                Save Regularly
+            </h3>
+
+            <p>
+                Set aside an amount for savings regularly instead of
+                waiting until the end of the month.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <span class="tip-number">03</span>
+
+            <div class="tip-icon">
+                🛍️
+            </div>
+
+            <h3>
+                Think Before Buying
+            </h3>
+
+            <p>
+                Ask yourself whether a purchase is necessary before
+                spending money.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <span class="tip-number">04</span>
+
+            <div class="tip-icon">
+                🎯
+            </div>
+
+            <h3>
+                Set Clear Goals
+            </h3>
+
+            <p>
+                Give your savings a purpose by setting simple,
+                realistic financial goals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="cta-content">
+
+        <span>
+            BUILD BETTER MONEY HABITS
+        </span>
+
+        <h2>
+            Your Money Journey Starts
+            With One Small Step.
+        </h2>
+
+        <p>
+            Explore BudgetBasics and learn practical financial
+            skills at your own pace.
+        </p>
+
+        <a href="learn.html" class="cta-btn">
+            Start Learning →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>
+                BudgetBasics
+            </h3>
+
+            <p>
+                Making financial literacy simple,
+                practical, and accessible.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="calculators.html">Calculators</a>
+            <a href="mistakes.html">Mistakes</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>Explore</h4>
+
+            <a href="ai-assistant.html">AI Assistant</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 BudgetBasics. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="ai-assistant.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | BudgetBasics</title>
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img
+                src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                alt="BudgetBasics Logo"
+            >
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="ai-assistant.html">AI Assistant</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="active nav-btn">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= MOBILE SIDEBAR ================= -->
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="sidebar-logo">
+            BudgetBasics
+        </div>
+
+        <button id="closeSidebar">
+            ×
+        </button>
+
+    </div>
+
+
+    <ul class="sidebar-links">
+
+        <li>
+            <a href="index.html">
+                <span>Home</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="learn.html">
+                <span>Learn Budgeting</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="calculators.html">
+                <span>Calculators</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="mistakes.html">
+                <span>Money Mistakes</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="ai-assistant.html">
+                <span>AI Assistant</span>
+                <span>›</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                <span>Contact Us</span>
+                <span>›</span>
+            </a>
+        </li>
+
+    </ul>
+
+
+    <div class="sidebar-footer">
+        <p>Learn. Plan. Grow.</p>
+    </div>
+
+</aside>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="contact-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="small-label">
+                ✦ GET IN TOUCH
+            </span>
+
+            <h1>
+                Let's Talk About
+                <span>Money & Learning</span>
+            </h1>
+
+            <p>
+                Have a question about budgeting, saving, spending,
+                or our website? Send us a message and let us know
+                how we can help.
+            </p>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="visual-card">
+
+                <div class="visual-icon">
+                    💬
+                </div>
+
+                <h3>
+                    We're Here To Help
+                </h3>
+
+                <p>
+                    Your questions help us make financial learning
+                    simpler and more useful.
+                </p>
+
+            </div>
+
+            <div class="floating-card card-one">
+                💰
+            </div>
+
+            <div class="floating-card card-two">
+                📚
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT INFO ================= -->
+
+<section class="contact-info-section">
+
+    <div class="section-heading">
+
+        <span>CONTACT INFORMATION</span>
+
+        <h2>
+            How Can We Help?
+        </h2>
+
+        <p>
+            Choose the option that best matches your question.
+        </p>
+
+    </div>
+
+
+    <div class="contact-cards">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📧
+            </div>
+
+            <h3>
+                Email Us
+            </h3>
+
+            <p>
+                Send us your questions or feedback through email.
+            </p>
+
+            <a href="mailto:info@budgetbasics.com">
+                info@budgetbasics.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                💬
+            </div>
+
+            <h3>
+                General Questions
+            </h3>
+
+            <p>
+                Ask about budgeting, saving, spending, or
+                financial learning topics.
+            </p>
+
+            <a href="#contactForm">
+                Send a Question →
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                💡
+            </div>
+
+            <h3>
+                Feedback
+            </h3>
+
+            <p>
+                Have an idea that could improve BudgetBasics?
+                We would love to hear it.
+            </p>
+
+            <a href="#contactForm">
+                Share Feedback →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN CONTACT AREA ================= -->
+
+<section class="contact-main" id="contactForm">
+
+    <div class="contact-wrapper">
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-left">
+
+            <span class="small-label">
+                SEND A MESSAGE
+            </span>
+
+            <h2>
+                Tell Us
+                <span>What's On Your Mind</span>
+            </h2>
+
+            <p>
+                Fill out the form and provide a few details about
+                your question or feedback.
+            </p>
+
+
+            <div class="contact-benefits">
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h4>
+                            Simple Communication
+                        </h4>
+
+                        <p>
+                            Tell us what you need in your own words.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h4>
+                            Financial Learning
+                        </h4>
+
+                        <p>
+                            Ask about basic budgeting and money topics.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h4>
+                            Useful Feedback
+                        </h4>
+
+                        <p>
+                            Help us improve the BudgetBasics experience.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT FORM -->
+
+        <div class="form-card">
+
+            <form id="contactFormElement">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="topic">
+                        Topic
+                    </label>
+
+                    <select id="topic" required>
+
+                        <option value="">
+                            Select a topic
+                        </option>
+
+                        <option value="budgeting">
+                            Budgeting
+                        </option>
+
+                        <option value="saving">
+                            Saving
+                        </option>
+
+                        <option value="spending">
+                            Spending
+                        </option>
+
+                        <option value="website">
+                            Website Feedback
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Your Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <label class="checkbox-row">
+
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        required
+                    >
+
+                    <span>
+                        I understand that this form is for general
+                        questions and educational feedback.
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Send Message →
+                </button>
+
+
+                <div
+                    class="form-message"
+                    id="formMessage"
+                ></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section">
+
+    <div class="section-heading">
+
+        <span>FAQ</span>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <p>
+            Quick answers to some common questions.
+        </p>
+
+    </div>
+
+
+    <div class="faq-container">
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    What is BudgetBasics?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    BudgetBasics is a financial literacy website
+                    designed to help people understand basic concepts
+                    such as budgeting, saving, spending, and money habits.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    Can I use the calculators?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. The Calculators page provides simple tools
+                    for working with common budgeting and financial
+                    calculations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    What can I ask the AI Assistant?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can ask basic questions about budgeting,
+                    saving, spending, needs versus wants, and other
+                    financial-learning topics.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    Is BudgetBasics financial advice?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    BudgetBasics is intended for general financial
+                    education and learning. Information on the website
+                    should not be treated as personalized professional
+                    financial advice.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="cta-content">
+
+        <span>
+            KEEP LEARNING
+        </span>
+
+        <h2>
+            Ready To Improve Your Money Habits?
+        </h2>
+
+        <p>
+            Explore our learning resources and start building
+            better financial habits.
+        </p>
+
+        <a href="learn.html" class="cta-btn">
+            Explore Learning →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>
+                BudgetBasics
+            </h3>
+
+            <p>
+                Making financial literacy simple,
+                practical, and accessible.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="calculators.html">Calculators</a>
+            <a href="mistakes.html">Mistakes</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="ai-assistant.html">AI Assistant</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 BudgetBasics. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="contact.js"></script>
+
+</body>
+</html>
