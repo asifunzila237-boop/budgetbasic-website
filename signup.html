@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | BudgetBasics</title>
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <main class="signup-page">
+
+        <!-- =====================================================
+             SIGN UP CARD
+        ===================================================== -->
+
+        <section class="signup-card">
+
+            <!-- BUDGETBASICS LOGO -->
+            <div class="signup-logo">
+                <img
+                    src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                    alt="BudgetBasics"
+                >
+            </div>
+
+
+            <!-- SOCIAL SIGN UP -->
+            <div class="social-signup">
+
+    <!-- GOOGLE -->
+    <button type="button" class="social-button">
+        <svg
+            class="social-icon google-logo"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+            <path
+                fill="#4285F4"
+                d="M21.35 12.27c0-.78-.07-1.53-.22-2.27H12v4.3h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.42z"
+            />
+            <path
+                fill="#34A853"
+                d="M12 21.6c2.63 0 4.84-.87 6.45-2.36l-3.14-2.45c-.87.58-1.98.93-3.31.93-2.54 0-4.69-1.71-5.46-4.01H3.3v2.52A9.74 9.74 0 0 0 12 21.6z"
+            />
+            <path
+                fill="#FBBC05"
+                d="M6.54 13.71A5.86 5.86 0 0 1 6.24 12c0-.59.1-1.16.3-1.71V7.77H3.3A9.74 9.74 0 0 0 2.26 12c0 1.57.38 3.06 1.04 4.23l3.24-2.52z"
+            />
+            <path
+                fill="#EA4335"
+                d="M12 6.28c1.43 0 2.72.49 3.73 1.45l2.8-2.8C16.83 3.35 14.63 2.4 12 2.4a9.74 9.74 0 0 0-8.7 5.37l3.24 2.52C7.31 7.99 9.46 6.28 12 6.28z"
+            />
+        </svg>
+
+        <span>Sign up with Google</span>
+    </button>
+
+
+    <!-- MICROSOFT -->
+    <button type="button" class="social-button">
+
+        <svg
+            class="social-icon microsoft-logo"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+            <rect x="2" y="2" width="9" height="9" fill="#F25022"/>
+            <rect x="13" y="2" width="9" height="9" fill="#7FBA00"/>
+            <rect x="2" y="13" width="9" height="9" fill="#00A4EF"/>
+            <rect x="13" y="13" width="9" height="9" fill="#FFB900"/>
+        </svg>
+
+        <span>Sign up with Microsoft</span>
+    </button>
+
+
+    <!-- APPLE -->
+    <button type="button" class="social-button">
+
+        <svg
+            class="social-icon apple-logo"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+            <path
+                fill="currentColor"
+                d="M16.62 12.86c.02 2.16 1.9 2.88 1.92 2.89-.02.05-.3 1.02-1 2.02-.6.86-1.23 1.72-2.21 1.74-.96.02-1.27-.56-2.38-.56-1.11 0-1.45.54-2.36.58-.95.04-1.68-.93-2.29-1.79-1.24-1.8-2.19-5.1-.92-7.33.63-1.11 1.77-1.81 3-1.83.93-.02 1.81.63 2.36.63.55 0 1.58-.78 2.66-.67.45.02 1.73.18 2.55 1.35-.07.04-1.52.89-1.5 2.97z"
+            />
+            <path
+                fill="currentColor"
+                d="M14.92 7.48c.5-.61.83-1.47.74-2.32-.72.03-1.59.48-2.1 1.09-.46.53-.86 1.4-.75 2.23.8.06 1.61-.4 2.11-1z"
+            />
+        </svg>
+
+        <span>Sign up with Apple</span>
+    </button>
+
+</div>
+
+
+            <!-- OR -->
+            <div class="or-divider">
+                <span>OR</span>
+            </div>
+
+
+            <!-- FORM -->
+            <form class="signup-form" id="signupForm">
+
+                <div class="form-group">
+
+                    <label for="firstName">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        autocomplete="given-name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="lastName">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        autocomplete="family-name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="get-started-button"
+                >
+                    Get Started
+                </button>
+
+            </form>
+
+
+            <!-- LOGIN -->
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">Log In</a>
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             RIGHT CONTENT
+        ===================================================== -->
+
+        <section class="signup-info">
+
+            <span class="signup-eyebrow">
+                YES, IT'S REALLY FREE
+            </span>
+
+            <div class="signup-wave">
+                ∿∿∿
+            </div>
+
+            <h1>
+    Join BudgetBasics
+</h1>
+
+            <div class="signup-benefits">
+
+                <div class="benefit">
+                    <span class="benefit-icon">✓</span>
+                    <span>Learn practical budgeting skills</span>
+                </div>
+
+                <div class="benefit">
+                    <span class="benefit-icon">✓</span>
+                    <span>Understand saving and spending</span>
+                </div>
+
+                <div class="benefit">
+                    <span class="benefit-icon">✓</span>
+                    <span>Use simple money calculators</span>
+                </div>
+
+                <div class="benefit">
+                    <span class="benefit-icon">✓</span>
+                    <span>Get help from the AI Assistant</span>
+                </div>
+
+            </div>
+
+            <p class="signup-small-text">
+                Everything you need to start learning real-world money skills.
+            </p>
+
+            
+
+        </section>
+
+    </main>
+
+    <script src="signup.js"></script>
+
+</body>
+
+</html>

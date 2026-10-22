@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculators | BudgetBasics</title>
+
+    <link rel="stylesheet" href="calculators.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+
+
+    <header class="header">
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="#">
+
+                <img
+                    class="desktop-logo"
+                    src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                    alt="BudgetBasics"
+                >
+
+            </a>
+
+
+            <a href="#">
+
+                <img
+                    class="mobile-logo"
+                    src="images/favicon.ico"
+                    alt="B!"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="signup.html" class="btn-cta">
+                    Sign Up
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <div class="menu-toggle" id="mobileMenu">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- SIDEBAR OVERLAY -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- SIDEBAR -->
+
+    <div
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+        <div class="sidebar-header">
+
+            <p>QUICK LINKS</p>
+
+            <span
+                class="close-btn"
+                id="closeBtn"
+            >
+                &times;
+            </span>
+
+        </div>
+
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="index.html">
+                    <span>Home</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="learn.html">
+                    <span>Learn Budgeting</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="calculators.html">
+                    <span>Calculators</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">
+                    <span>Mistakes</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <span>Contact Us</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signup.html">
+                    <span>Sign Up</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="sidebar-footer">
+
+            <div class="social-icons">
+
+                <!-- FACEBOOK -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                    style="margin-top: 2px;"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.204-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- DISCORD -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="slogan">
+                <span>Build Better Money Habits</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+    <!-- =========================================================
+         MOBILE SIDEBAR
+    ========================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <aside
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+        <button
+            class="sidebar-close"
+            id="closeBtn"
+            type="button"
+            aria-label="Close menu"
+        >
+            ×
+        </button>
+
+
+        <div class="sidebar-brand">
+
+            <img
+                src="images/favicon.ico"
+                alt="B!"
+            >
+
+            <span>
+                BudgetBasics
+            </span>
+
+        </div>
+
+
+        <div class="sidebar-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#learn">
+                Learn Budgeting
+            </a>
+
+            <a href="calculators.html">
+                Calculators
+            </a>
+
+            <a href="index.html#mistakes">
+                Money Mistakes
+            </a>
+
+            <a href="index.html#ai-assistant">
+                AI Assistant
+            </a>
+
+            <a href="index.html#contact">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <p>
+                Build Better<br>
+                Money Habits
+            </p>
+
+
+            <div class="sidebar-socials">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ig
+                </a>
+
+                <a href="#" aria-label="Discord">
+                    dc
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================================================
+         PAGE
+    ========================================================== -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="calculator-hero">
+
+            <div class="hero-content">
+
+                <span class="calc-eyebrow">
+                    CALCULATORS
+                </span>
+
+
+
+                <h1>
+    Calculate Smarter<br>
+    <span>Plan Better</span>
+</h1>
+
+
+                <p>
+                    Simple tools to help you understand your budget,
+                    plan your savings, and see your spending clearly.
+                </p>
+
+
+                <a
+                    href="#budget-calculator"
+                    class="hero-button"
+                >
+                    Browse Calculators
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY IT MATTERS
+        ====================================================== -->
+
+        <section class="calculator-why">
+
+            <div class="calculator-why-inner">
+
+                <div class="calculator-why-content">
+
+                    <h2>
+    Turn everyday numbers
+    <br>
+    <span>
+        into better decisions
+    </span>
+</h2>
+
+                    <p>
+    Managing money becomes easier when you can see where it is coming from,
+    where it is going, and what you are working toward. These calculators help turn those everyday numbers
+    into simple information you can understand, compare, and use to plan ahead.
+</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             BUDGET CALCULATOR
+        ====================================================== -->
+
+        <section
+            class="calculator-section calculator-item"
+            id="budget-calculator"
+        >
+
+            <div class="calculator-card">
+
+
+                <div class="card-number">
+                    01
+                </div>
+
+
+                <div class="card-information">
+
+                    <span class="card-label">
+                        BUDGETING BASICS
+                    </span>
+
+
+                    <h2 style="line-height: 1.2;">
+                        How much money
+                        is left?
+                    </h2>
+
+
+                    <p>
+                        Enter your monthly income and expenses
+                        to see how much money remains after
+                        your spending.
+                    </p>
+
+
+                    <div class="formula-box">
+
+                        <div>
+                            <strong>INCOME</strong>
+                            <small>Money coming in</small>
+                        </div>
+
+                        <b style="position: relative; right: 30px;">−</b>
+
+                        <div>
+                            <strong>EXPENSES</strong>
+                            <small>Money going out</small>
+                        </div>
+
+                        <b style="position: relative; right: 30px;">=</b>
+
+                        <div>
+                            <strong>LEFT</strong>
+                            <small>Money remaining</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="calculator-box">
+
+                    <div class="calculator-box-title">
+                        ENTER YOUR NUMBERS
+                    </div>
+
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+
+                            <label for="income">
+                                Monthly Income
+                            </label>
+
+                            <div class="input-field">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="income"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="2500"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="expenses">
+                                Monthly Expenses
+                            </label>
+
+                            <div class="input-field">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="expenses"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="1800"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="calculate-btn yellow-btn"
+                        id="budgetCalculate"
+                    >
+                        Calculate
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="result-box yellow-result">
+
+                        <div>
+
+                            <small>
+                                MONEY LEFT
+                            </small>
+
+                            <strong id="remainingAmount">
+                                $0.00
+                            </strong>
+
+                        </div>
+
+                        <span class="result-symbol">
+                            $
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SAVINGS CALCULATOR
+        ====================================================== -->
+
+        <section
+            class="calculator-section calculator-item"
+            id="savings-calculator"
+        >
+
+            <div class="calculator-card">
+
+
+                <div class="card-number blue-number">
+                    02
+                </div>
+
+
+                <div class="card-information">
+
+                    <span class="card-label blue-label">
+                        SAVINGS GOALS
+                    </span>
+
+
+                    <h2 style="line-height: 1.2;">
+                        How long until
+                        you reach it?
+                    </h2>
+
+
+                    <p>
+                        Enter your savings goal and how much
+                        you plan to save each month to estimate
+                        how long it may take.
+                    </p>
+
+
+                    <div class="goal-box">
+
+                        <div class="goal-circle">
+
+                            <div>
+                                GOAL
+                            </div>
+
+                        </div>
+
+
+                        <div class="goal-lines">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="calculator-box">
+
+                    <div class="calculator-box-title">
+                        SET YOUR SAVINGS GOAL
+                    </div>
+
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+
+                            <label for="goalAmount">
+                                Savings Goal
+                            </label>
+
+                            <div class="input-field">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="goalAmount"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="1200"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="monthlySaving">
+                                Save Each Month
+                            </label>
+
+                            <div class="input-field">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="monthlySaving"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="150"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="calculate-btn blue-btn"
+                        id="savingsCalculate"
+                    >
+                        Calculate
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="result-box blue-result">
+
+                        <div>
+
+                            <small>
+                                ESTIMATED TIME
+                            </small>
+
+                            <strong id="savingMonths">
+                                0 months
+                            </strong>
+
+                        </div>
+
+                        <span class="result-symbol">
+                            ✓
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             NEEDS VS WANTS
+        ====================================================== -->
+
+        <section
+            class="calculator-section calculator-item"
+            id="needs-calculator"
+        >
+
+            <div class="calculator-card">
+
+
+                <div class="card-number yellow-number">
+                    03
+                </div>
+
+
+                <div class="card-information">
+
+                    <span class="card-label">
+                        NEEDS VS. WANTS
+                    </span>
+
+
+                    <h2 style="line-height: 1.2;">
+                        Where does your
+                        spending go?
+                    </h2>
+
+
+                    <p>
+                        Compare your needs and wants to see what
+                        percentage of your total spending goes
+                        toward essentials and extras.
+                    </p>
+
+
+                    <div class="spending-box">
+
+                        <div class="spending-bar">
+
+                            <span class="needs-bar"></span>
+
+                            <span class="wants-bar"></span>
+
+                        </div>
+
+
+                        <div class="spending-labels">
+
+                            <div>
+                                <strong>NEEDS</strong>
+                                <small>Essentials</small>
+                            </div>
+
+                            <div>
+                                <strong>WANTS</strong>
+                                <small>Extras</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="calculator-box">
+
+                    <div class="calculator-box-title">
+                        ENTER YOUR SPENDING
+                    </div>
+
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+
+                            <label for="needsAmount">
+                                Needs
+                            </label>
+
+                            <div class="input-field">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="needsAmount"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="1100"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="wantsAmount">
+                                Wants
+                            </label>
+
+                            <div class="input-field">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="wantsAmount"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="500"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="calculate-btn black-btn"
+                        id="needsCalculate"
+                    >
+                        Calculate
+                        <span>→</span>
+                    </button>
+
+
+                    <div class="result-box gray-result">
+
+                        <div>
+
+                            <small>
+                                SPENDING SPLIT
+                            </small>
+
+                            <strong id="needsPercentage">
+                                0% Needs
+                            </strong>
+
+                        </div>
+
+                        <span class="result-symbol black-result-symbol">
+                            %
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUICK CHECKs
+        ====================================================== -->
+
+        <section class="calculator-quick-check">
+
+            <div class="calculator-quick-check-inner">
+
+                <div class="calculator-quick-copy">
+
+    <span class="calculator-quick-eyebrow">
+        QUICK CHECK
+    </span>
+
+<h2>
+    Ask Yourself 
+    <br>
+    <span> 3 Simple Questions.</span>
+</h2>
+
+    <p>
+        Before making a decision, take a moment to check what your numbers are telling you.
+    </p>
+
+</div>
+
+                <div class="calculator-quick-list">
+
+                    <div class="calculator-quick-item">
+                        <span>01</span>
+                        <div>
+                            <strong>What is left?</strong>
+                            <p>
+                                Compare your monthly income with your expenses.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="calculator-quick-item">
+                        <span>02</span>
+                        <div>
+                            <strong>What is your goal?</strong>
+                            <p>
+                                Turn a savings target into a clear monthly amount.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="calculator-quick-item">
+                        <span>03</span>
+                        <div>
+                            <strong>Where is it going?</strong>
+                            <p>
+                                Check how much of your spending goes toward needs/wants.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="final-cta">
+
+            <div class="cta-content">
+
+                <span class="cta-eyebrow">
+    STUDENT SUPPORT
+</span>
+
+                <h2>
+                    Guidance Available <br> For Students
+                </h2>
+
+                <p>
+                We offer free pieces of knowlegde & guidance for students who're interested in managing their finances.
+            </p>
+
+
+                <a
+                    href="learn.html"
+                    class="cta-button"
+                >
+                    Learn More
+
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <!-- CURVE -->
+
+    <svg
+        class="footer-curve"
+        viewBox="0 0 1000 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+    >
+
+        <path
+            d="M0 0 H1000 V145 Q500 0 0 145 Z"
+            fill="#ffffff"
+        ></path>
+
+    </svg>
+
+
+
+    <div class="footer-inner">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <div class="footer-logo">
+
+                <img
+                    src="images/ChatGPT Image Sep 23, 2026, 08_03_00 PM.png"
+                    alt="B!"
+                >
+
+            </div>
+
+
+            <p>
+                © 2026 BudgetBasics.<br>
+                All rights reserved.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LEARN -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                LEARN
+            </h4>
+
+
+            <a href="learn.html#budgeting">
+                Budgeting Basics
+            </a>
+
+
+            <a href="learn.html#needs-wants">
+                Needs vs. Wants
+            </a>
+
+
+            <a href="learn.html#savings">
+                Savings Goals
+            </a>
+
+
+            <a href="learn.html#mistakes">
+                Money Mistakes
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                TOOLS
+            </h4>
+
+
+            <a href="calculators.html#budget-calculator">
+                Budget Calculator
+            </a>
+
+
+            <a href="calculators.html#savings-calculator">
+                Savings Calculator
+            </a>
+
+
+            <a href="calculators.html#needs-calculator">
+                Needs vs. Wants
+            </a>
+
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                COMPANY
+            </h4>
+
+
+            <a href="https://www.instagram.com">
+                Instagram
+            </a>
+
+            <a href="https://www.discord.com">
+                Discord
+            </a>
+
+            <a href="https://www.linkedin.com">
+                LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com">
+                Facebook
+            </a>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- =========================================================
+     BUDGETBASICS AI ASSISTANT
+========================================================= -->
+
+<div class="ai-assistant-widget">
+
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="ai-assistant-backdrop"
+        id="aiAssistantBackdrop"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         FLOATING AI BUTTON
+    ====================================================== -->
+
+    <button
+        class="ai-assistant-launcher"
+        id="aiAssistantLauncher"
+        type="button"
+        aria-label="Open BudgetBasics AI Assistant"
+        aria-expanded="false"
+    >
+
+        <!-- BOT BADGE -->
+
+        <span class="ai-launcher-badge">
+
+            <!-- ROBOT ICON -->
+
+            <svg
+                class="ai-launcher-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+
+                <!-- Antenna -->
+
+                <path
+                    d="M12 5V3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+                <circle
+                    cx="12"
+                    cy="2.5"
+                    r="1"
+                    fill="currentColor"
+                />
+
+
+                <!-- Robot Head -->
+
+                <rect
+                    x="4"
+                    y="6"
+                    width="16"
+                    height="13"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+
+                <!-- Eyes -->
+
+                <circle
+                    cx="9"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+                <circle
+                    cx="15"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+
+                <!-- Mouth -->
+
+                <path
+                    d="M9 15H15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+
+                <!-- Side Details -->
+
+                <path
+                    d="M4 11H2.8"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M21.2 11H20"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+
+            <!-- ONLINE DOT -->
+
+            <span
+                class="ai-status-dot"
+                aria-hidden="true"
+            ></span>
+
+        </span>
+
+
+        <!-- CLOSE ICON -->
+
+        <span
+            class="ai-launcher-close"
+            aria-hidden="true"
+        >
+            ×
+        </span>
+
+
+        <!-- HOVER LABEL -->
+
+        <span
+            class="ai-launcher-label"
+            aria-hidden="true"
+        >
+            BudgetBasics AI
+        </span>
+
+    </button>
+
+
+    <!-- =====================================================
+         CHAT PANEL
+    ====================================================== -->
+
+    <section
+        class="ai-assistant-panel"
+        id="aiAssistantPanel"
+        aria-hidden="true"
+    >
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="ai-assistant-header">
+
+            <div class="ai-assistant-title-wrap">
+
+
+                <!-- BOT AVATAR -->
+
+                <div class="ai-assistant-avatar">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+
+                        <!-- Antenna -->
+
+                        <path
+                            d="M12 5V3"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="2.5"
+                            r="1"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Robot Head -->
+
+                        <rect
+                            x="4"
+                            y="6"
+                            width="16"
+                            height="13"
+                            rx="4"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+
+
+                        <!-- Eyes -->
+
+                        <circle
+                            cx="9"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+                        <circle
+                            cx="15"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Mouth -->
+
+                        <path
+                            d="M9 15H15"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- Side Details -->
+
+                        <path
+                            d="M4 11H2.8"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M21.2 11H20"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <div>
+
+                    <h3>
+                        BudgetBasics AI
+                    </h3>
+
+                    <span>
+                        Money Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="ai-assistant-close"
+                id="aiAssistantClose"
+                type="button"
+                aria-label="Close BudgetBasics AI Assistant"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <div
+            class="ai-assistant-messages"
+            id="aiAssistantMessages"
+            aria-live="polite"
+        >
+
+
+            <!-- INITIAL MESSAGE -->
+
+            <div
+                class="ai-message ai-message-bot"
+            >
+
+                <div
+                    class="ai-message-avatar"
+                >
+                    AI
+                </div>
+
+                <div
+                    class="ai-message-bubble"
+                >
+                    Hi! I’m the BudgetBasics AI Assistant. Ask me about budgeting, saving, spending, or everyday money decisions.
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK QUESTIONS
+            ================================================== -->
+
+            <div
+                class="ai-quick-start"
+                id="aiQuickStart"
+            >
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How do I make a budget?"
+                >
+                    How do I make a budget?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="What is the difference between needs and wants?"
+                >
+                    Needs vs. wants?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How can I start saving money?"
+                >
+                    How can I save money?
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INPUT AREA
+        ================================================== -->
+
+        <form
+            class="ai-assistant-input-area"
+            id="aiAssistantForm"
+        >
+
+            <input
+                type="text"
+                id="aiAssistantInput"
+                class="ai-assistant-input"
+                placeholder="Ask a money question..."
+                autocomplete="off"
+                aria-label="Ask a money question"
+            />
+
+
+            <!-- SEND -->
+
+            <button
+                type="submit"
+                class="ai-assistant-send"
+                aria-label="Send message"
+            >
+
+                <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M21 3L10.5 13.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M21 3L14.3 21L10.5 13.5L3 9.7L21 3Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="calculators.js"></script>
+
+</body>
+
+</html>

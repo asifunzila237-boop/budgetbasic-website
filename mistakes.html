@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Money Mistakes | BudgetBasics</title>
+
+
+    <!-- EXISTING WEBSITE STYLES -->
+
+    <link
+        rel="stylesheet"
+        href="index.css"
+    >
+
+
+    <!-- MONEY MISTAKES PAGE STYLES -->
+
+    <link
+        rel="stylesheet"
+        href="mistakes.css"
+    >
+
+
+    <!-- FAVICON -->
+
+    <link
+        rel="icon"
+        type="image/ico"
+        sizes="32x32"
+        href="images/favicon.ico"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img
+                    class="desktop-logo"
+                    src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                    alt="BudgetBasics"
+                >
+
+            </a>
+
+
+            <a href="index.html">
+
+                <img
+                    class="mobile-logo"
+                    src="images/favicon.ico"
+                    alt="B!"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <ul
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="signup.html" class="btn-cta">
+                    Sign Up
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <div
+            class="menu-toggle"
+            id="mobileMenu"
+        >
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- SIDEBAR OVERLAY -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+
+    <!-- SIDEBAR -->
+
+    <div
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+
+        <!-- SIDEBAR HEADER -->
+
+        <div class="sidebar-header">
+
+            <p>
+                QUICK LINKS
+            </p>
+
+
+            <span
+                class="close-btn"
+                id="closeBtn"
+            >
+                &times;
+            </span>
+
+        </div>
+
+
+
+        <!-- SIDEBAR LINKS -->
+
+        <ul class="sidebar-links">
+
+
+            <li>
+                <a href="index.html">
+                    <span>Home</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="learn.html">
+                    <span>Learn Budgeting</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="calculators.html">
+                    <span>Calculators</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">
+                    <span>Mistakes</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <span>Contact Us</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signup.html">
+                    <span>Sign Up</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+
+        </ul>
+
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <div class="social-icons">
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                    aria-label="Facebook"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+
+                    </svg>
+
+                </a>
+
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                    aria-label="Instagram"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.204-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+
+                    </svg>
+
+                </a>
+
+
+
+                <!-- DISCORD -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                    aria-label="Discord"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="slogan">
+
+                <span>
+                    Build Better Money Habits
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="mm-hero">
+
+        <div class="mm-hero-inner">
+
+
+            <div class="mm-hero-copy">
+
+
+                <span class="mm-eyebrow">
+                    MONEY MISTAKES
+                </span>
+
+
+                <h1>
+                    Small Mistakes
+                    <br>
+                    <span style="color: black;">
+                        Big Impact
+                    </span>
+                </h1>
+
+
+                <p>
+                    Money management is not about being perfect.
+                    It is about noticing the everyday choices that
+                    can quietly affect your budget.
+                </p>
+
+
+                <a
+                    href="#mistakes"
+                    class="mm-hero-button"
+                >
+
+                    Explore Common Mistakes
+
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY IT MATTERS
+    ====================================================== -->
+
+    <section class="mm-intro">
+
+        <div class="mm-section-inner">
+
+
+            <div class="mm-intro-content">
+
+
+                <h2>
+
+                    Your money habits are built
+
+                    <span>
+                        one decision at a time
+                    </span>
+
+                </h2>
+
+
+                <p>
+                    Students often manage allowances, part-time income,
+                    transport, food, study expenses, subscriptions and
+                    everyday purchases. Without a simple plan, small
+                    spending decisions can become habits.
+                    The first step is simply noticing where your money
+                    is going and understanding the choices behind it.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MONEY MISTAKES
+    ====================================================== -->
+
+    <section
+        class="mm-mistakes"
+        id="mistakes"
+    >
+
+        <div class="mm-section-inner">
+
+
+            <div class="mm-section-heading">
+
+
+                <span class="mm-eyebrow">
+                    THE FIVE TO WATCH
+                </span>
+
+
+                <h2>
+
+                    Common Money Mistakes
+
+                    <br>
+
+                    <span style="color: black;">
+                        Students Can Avoid
+                    </span>
+
+                </h2>
+
+
+                <p>
+                    Open each section to see a realistic situation
+                    and a simple action you can take instead.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ACCORDION
+            ================================================== -->
+
+            <div class="mm-accordion">
+
+
+                <!-- =================================================
+                     01 — IMPULSE BUYING
+                ================================================== -->
+
+                <details
+                    class="mm-mistake"
+                    open
+                >
+
+
+                    <summary>
+
+
+                        <div class="mm-mistake-number">
+                            01
+                        </div>
+
+
+                        <div class="mm-mistake-title">
+
+                            <span>
+                                SPENDING HABIT
+                            </span>
+
+
+                            <h3>
+                                Impulse Buying
+                            </h3>
+
+                        </div>
+
+
+                        <div class="mm-mistake-plus">
+                            +
+                        </div>
+
+
+                    </summary>
+
+
+
+                    <div class="mm-mistake-body">
+
+
+                        <div class="mm-scenario">
+
+
+                            <span>
+                                THE SITUATION
+                            </span>
+
+
+                            <h4>
+                                “It was not planned,
+                                but it looked worth it.”
+                            </h4>
+
+
+                            <p>
+                                You see something you like and buy it
+                                immediately without checking whether
+                                the purchase fits your budget.
+                            </p>
+
+
+                        </div>
+
+
+
+                        <div class="mm-action">
+
+
+                            <div class="mm-action-label">
+                                A BETTER MOVE
+                            </div>
+
+
+                            <h4>
+                                Pause before you purchase.
+                            </h4>
+
+
+                            <p>
+                                Ask yourself whether you need it,
+                                whether you already have something
+                                similar, and whether you planned
+                                to spend this money.
+                            </p>
+
+
+                            <div class="mm-rule">
+
+
+                                <strong>
+                                    PAUSE
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    THINK
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    DECIDE
+                                </strong>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </details>
+
+
+
+                <!-- =================================================
+                     02 — SMALL EXPENSES
+                ================================================== -->
+
+                <details class="mm-mistake"
+                open>
+
+
+                    <summary>
+
+
+                        <div class="mm-mistake-number">
+                            02
+                        </div>
+
+
+                        <div class="mm-mistake-title">
+
+                            <span>
+                                DAILY SPENDING
+                            </span>
+
+
+                            <h3>
+                                Ignoring Small Expenses
+                            </h3>
+
+                        </div>
+
+
+                        <div class="mm-mistake-plus">
+                            +
+                        </div>
+
+
+                    </summary>
+
+
+
+                    <div class="mm-mistake-body">
+
+
+                        <div class="mm-scenario">
+
+
+                            <span>
+                                THE SITUATION
+                            </span>
+
+
+                            <h4>
+                                “It is only a small purchase.”
+                            </h4>
+
+
+                            <p>
+                                A drink, snack, delivery fee or another
+                                small purchase may seem harmless on its
+                                own. Repeated spending, however, can take
+                                a noticeable part of your monthly money.
+                            </p>
+
+
+                        </div>
+
+
+
+                        <div class="mm-action">
+
+
+                            <div class="mm-action-label">
+                                A BETTER MOVE
+                            </div>
+
+
+                            <h4>
+                                Track the little things.
+                            </h4>
+
+
+                            <p>
+                                Write down your small purchases for one
+                                week. Seeing the total makes spending
+                                patterns much easier to understand.
+                            </p>
+
+
+                            <div class="mm-rule">
+
+
+                                <strong>
+                                    TRACK
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    ADD
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    NOTICE
+                                </strong>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </details>
+
+
+
+                <!-- =================================================
+                     03 — LATE PAYMENTS
+                ================================================== -->
+
+                <details class="mm-mistake" open>
+
+
+                    <summary>
+
+
+                        <div class="mm-mistake-number">
+                            03
+                        </div>
+
+
+                        <div class="mm-mistake-title">
+
+                            <span>
+                                PLANNING HABIT
+                            </span>
+
+
+                            <h3>
+                                Late Payments
+                            </h3>
+
+                        </div>
+
+
+                        <div class="mm-mistake-plus">
+                            +
+                        </div>
+
+
+                    </summary>
+
+
+
+                    <div class="mm-mistake-body">
+
+
+                        <div class="mm-scenario">
+
+
+                            <span>
+                                THE SITUATION
+                            </span>
+
+
+                            <h4>
+                                “I completely forgot about it.”
+                            </h4>
+
+
+                            <p>
+                                An important payment date arrives while
+                                you are focused on other expenses. Because
+                                it was not included in your plan, you have
+                                to rearrange your money at the last moment.
+                            </p>
+
+
+                        </div>
+
+
+
+                        <div class="mm-action">
+
+
+                            <div class="mm-action-label">
+                                A BETTER MOVE
+                            </div>
+
+
+                            <h4>
+                                Keep important dates visible.
+                            </h4>
+
+
+                            <p>
+                                Make a simple list or reminder for expected
+                                payments so they are considered before
+                                spending money elsewhere.
+                            </p>
+
+
+                            <div class="mm-rule">
+
+
+                                <strong>
+                                    REMEMBER
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    PLAN
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    PAY
+                                </strong>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </details>
+
+
+
+                <!-- =================================================
+                     04 — UNUSED SUBSCRIPTIONS
+                ================================================== -->
+
+                <details class="mm-mistake" open>
+
+
+                    <summary>
+
+
+                        <div class="mm-mistake-number">
+                            04
+                        </div>
+
+
+                        <div class="mm-mistake-title">
+
+                            <span>
+                                RECURRING SPENDING
+                            </span>
+
+
+                            <h3>
+                                Unused Subscriptions
+                            </h3>
+
+                        </div>
+
+
+                        <div class="mm-mistake-plus">
+                            +
+                        </div>
+
+
+                    </summary>
+
+
+
+                    <div class="mm-mistake-body">
+
+
+                        <div class="mm-scenario">
+
+
+                            <span>
+                                THE SITUATION
+                            </span>
+
+
+                            <h4>
+                                “I forgot I was still paying for it.”
+                            </h4>
+
+
+                            <p>
+                                A subscription continues charging regularly
+                                even though you rarely use the service anymore.
+                                Repeated charges can quietly increase your
+                                monthly spending.
+                            </p>
+
+
+                        </div>
+
+
+
+                        <div class="mm-action">
+
+
+                            <div class="mm-action-label">
+                                A BETTER MOVE
+                            </div>
+
+
+                            <h4>
+                                Review recurring expenses.
+                            </h4>
+
+
+                            <p>
+                                Check your subscriptions from time to time.
+                                Keep the services that are useful and remove
+                                those you no longer need.
+                            </p>
+
+
+                            <div class="mm-rule">
+
+
+                                <strong>
+                                    CHECK
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    USE
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    KEEP
+                                </strong>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </details>
+
+
+
+                <!-- =================================================
+                     05 — SPENDING WITHOUT A PLAN
+                ================================================== -->
+
+                <details class="mm-mistake" open>
+
+
+                    <summary>
+
+
+                        <div class="mm-mistake-number">
+                            05
+                        </div>
+
+
+                        <div class="mm-mistake-title">
+
+                            <span>
+                                BUDGETING HABIT
+                            </span>
+
+
+                            <h3>
+                                Spending Without a Plan
+                            </h3>
+
+                        </div>
+
+
+                        <div class="mm-mistake-plus">
+                            +
+                        </div>
+
+
+                    </summary>
+
+
+
+                    <div class="mm-mistake-body">
+
+
+                        <div class="mm-scenario">
+
+
+                            <span>
+                                THE SITUATION
+                            </span>
+
+
+                            <h4>
+                                “I will figure it out later.”
+                            </h4>
+
+
+                            <p>
+                                Money gets spent throughout the month
+                                without deciding how much should go toward
+                                requirements, wants and savings.
+                            </p>
+
+
+                        </div>
+
+
+
+                        <div class="mm-action">
+
+
+                            <div class="mm-action-label">
+                                A BETTER MOVE
+                            </div>
+
+
+                            <h4>
+                                Give your money a purpose.
+                            </h4>
+
+
+                            <p>
+                                Start with a simple monthly plan. Separate
+                                important expenses from optional spending
+                                and decide what amount you want to keep
+                                for savings.
+                            </p>
+
+
+                            <div class="mm-rule">
+
+
+                                <strong>
+                                    PLAN
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    SPEND
+                                </strong>
+
+
+                                <span>
+                                    →
+                                </span>
+
+
+                                <strong>
+                                    SAVE
+                                </strong>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </details>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         QUICK CHECK
+    ====================================================== -->
+
+    <section class="mm-check">
+
+
+        <div class="mm-check-inner">
+
+
+            <!-- LEFT -->
+
+            <div class="mm-check-copy">
+
+
+                <span class="mm-eyebrow">
+                    BEFORE YOU SPEND
+                </span>
+
+
+                <h2>
+
+                    Ask yourself
+<br>
+                    <span>
+                        3 Simple Questions.
+                    </span>
+
+                </h2>
+
+
+                <p>
+                    A quick pause can make a spending decision easier
+                    to understand before you commit your money.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="mm-check-list">
+
+
+                <!-- 01 -->
+
+                <div class="mm-check-item">
+
+
+                    <span>
+                        01
+                    </span>
+
+
+                    <div>
+
+
+                        <strong>
+                            Do I need this?
+                        </strong>
+
+
+                        <p>
+                            Separate important requirements
+                            from optional purchases.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- 02 -->
+
+                <div class="mm-check-item">
+
+
+                    <span>
+                        02
+                    </span>
+
+
+                    <div>
+
+
+                        <strong>
+                            Did I plan for it?
+                        </strong>
+
+
+                        <p>
+                            Check whether the purchase fits
+                            your current budget.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- 03 -->
+
+                <div class="mm-check-item">
+
+
+                    <span>
+                        03
+                    </span>
+
+
+                    <div>
+
+
+                        <strong>
+                            Will I still value it later?
+                        </strong>
+
+
+                        <p>
+                            Give yourself time before making
+                            non-essential purchases.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINAL CTA
+    ====================================================== -->
+
+    <section class="mm-final-cta">
+
+
+        <div class="mm-final-cta-inner">
+
+
+            <span class="mm-eyebrow">
+                KEEP LEARNING
+            </span>
+
+
+            <h2>
+
+                Better Money Habits
+
+                <span>
+                    Start With Awareness
+                </span>
+
+            </h2>
+
+
+            <p>
+                Use the BudgetBasics tools to understand your spending,
+                plan your money and set simple savings goals.
+            </p>
+
+
+            <div class="mm-final-actions">
+
+
+                <a
+                    href="calculators.html"
+                    class="mm-final-primary"
+                >
+
+                    Try the Calculators
+
+
+                </a>
+
+
+                <a
+                    href="learn.html"
+                    class="mm-final-secondary"
+                >
+                    Back to Learning
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <!-- CURVE -->
+
+    <svg
+        class="footer-curve"
+        viewBox="0 0 1000 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+    >
+
+        <path
+            d="M0 0 H1000 V145 Q500 0 0 145 Z"
+            fill="#ffffff"
+        ></path>
+
+    </svg>
+
+
+
+    <div class="footer-inner">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <div class="footer-logo">
+
+                <img
+                    src="images/ChatGPT Image Sep 23, 2026, 08_03_00 PM.png"
+                    alt="B!"
+                >
+
+            </div>
+
+
+            <p>
+                © 2026 BudgetBasics.<br>
+                All rights reserved.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LEARN -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                LEARN
+            </h4>
+
+
+            <a href="learn.html#budgeting">
+                Budgeting Basics
+            </a>
+
+
+            <a href="learn.html#needs-wants">
+                Needs vs. Wants
+            </a>
+
+
+            <a href="learn.html#savings">
+                Savings Goals
+            </a>
+
+
+            <a href="learn.html#mistakes">
+                Money Mistakes
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                TOOLS
+            </h4>
+
+
+            <a href="calculators.html#budget-calculator">
+                Budget Calculator
+            </a>
+
+
+            <a href="calculators.html#savings-calculator">
+                Savings Calculator
+            </a>
+
+
+            <a href="calculators.html#needs-calculator">
+                Needs vs. Wants
+            </a>
+
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                COMPANY
+            </h4>
+
+
+            <a href="https://www.instagram.com">
+                Instagram
+            </a>
+
+            <a href="https://www.discord.com">
+                Discord
+            </a>
+
+            <a href="https://www.linkedin.com">
+                LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com">
+                Facebook
+            </a>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     BUDGETBASICS AI ASSISTANT
+========================================================= -->
+
+<div class="ai-assistant-widget">
+
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="ai-assistant-backdrop"
+        id="aiAssistantBackdrop"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         FLOATING AI BUTTON
+    ====================================================== -->
+
+    <button
+        class="ai-assistant-launcher"
+        id="aiAssistantLauncher"
+        type="button"
+        aria-label="Open BudgetBasics AI Assistant"
+        aria-expanded="false"
+    >
+
+        <!-- BOT BADGE -->
+
+        <span class="ai-launcher-badge">
+
+            <!-- ROBOT ICON -->
+
+            <svg
+                class="ai-launcher-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+
+                <!-- Antenna -->
+
+                <path
+                    d="M12 5V3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+                <circle
+                    cx="12"
+                    cy="2.5"
+                    r="1"
+                    fill="currentColor"
+                />
+
+
+                <!-- Robot Head -->
+
+                <rect
+                    x="4"
+                    y="6"
+                    width="16"
+                    height="13"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+
+                <!-- Eyes -->
+
+                <circle
+                    cx="9"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+                <circle
+                    cx="15"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+
+                <!-- Mouth -->
+
+                <path
+                    d="M9 15H15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+
+                <!-- Side Details -->
+
+                <path
+                    d="M4 11H2.8"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M21.2 11H20"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+
+            <!-- ONLINE DOT -->
+
+            <span
+                class="ai-status-dot"
+                aria-hidden="true"
+            ></span>
+
+        </span>
+
+
+        <!-- CLOSE ICON -->
+
+        <span
+            class="ai-launcher-close"
+            aria-hidden="true"
+        >
+            ×
+        </span>
+
+
+        <!-- HOVER LABEL -->
+
+        <span
+            class="ai-launcher-label"
+            aria-hidden="true"
+        >
+            BudgetBasics AI
+        </span>
+
+    </button>
+
+
+    <!-- =====================================================
+         CHAT PANEL
+    ====================================================== -->
+
+    <section
+        class="ai-assistant-panel"
+        id="aiAssistantPanel"
+        aria-hidden="true"
+    >
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="ai-assistant-header">
+
+            <div class="ai-assistant-title-wrap">
+
+
+                <!-- BOT AVATAR -->
+
+                <div class="ai-assistant-avatar">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+
+                        <!-- Antenna -->
+
+                        <path
+                            d="M12 5V3"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="2.5"
+                            r="1"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Robot Head -->
+
+                        <rect
+                            x="4"
+                            y="6"
+                            width="16"
+                            height="13"
+                            rx="4"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+
+
+                        <!-- Eyes -->
+
+                        <circle
+                            cx="9"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+                        <circle
+                            cx="15"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Mouth -->
+
+                        <path
+                            d="M9 15H15"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- Side Details -->
+
+                        <path
+                            d="M4 11H2.8"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M21.2 11H20"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <div>
+
+                    <h3>
+                        BudgetBasics AI
+                    </h3>
+
+                    <span>
+                        Money Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="ai-assistant-close"
+                id="aiAssistantClose"
+                type="button"
+                aria-label="Close BudgetBasics AI Assistant"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <div
+            class="ai-assistant-messages"
+            id="aiAssistantMessages"
+            aria-live="polite"
+        >
+
+
+            <!-- INITIAL MESSAGE -->
+
+            <div
+                class="ai-message ai-message-bot"
+            >
+
+                <div
+                    class="ai-message-avatar"
+                >
+                    AI
+                </div>
+
+                <div
+                    class="ai-message-bubble"
+                >
+                    Hi! I’m the BudgetBasics AI Assistant. Ask me about budgeting, saving, spending, or everyday money decisions.
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK QUESTIONS
+            ================================================== -->
+
+            <div
+                class="ai-quick-start"
+                id="aiQuickStart"
+            >
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How do I make a budget?"
+                >
+                    How do I make a budget?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="What is the difference between needs and wants?"
+                >
+                    Needs vs. wants?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How can I start saving money?"
+                >
+                    How can I save money?
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INPUT AREA
+        ================================================== -->
+
+        <form
+            class="ai-assistant-input-area"
+            id="aiAssistantForm"
+        >
+
+            <input
+                type="text"
+                id="aiAssistantInput"
+                class="ai-assistant-input"
+                placeholder="Ask a money question..."
+                autocomplete="off"
+                aria-label="Ask a money question"
+            />
+
+
+            <!-- SEND -->
+
+            <button
+                type="submit"
+                class="ai-assistant-send"
+                aria-label="Send message"
+            >
+
+                <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M21 3L10.5 13.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M21 3L14.3 21L10.5 13.5L3 9.7L21 3Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+<script src="index.js"></script>
+
+
+</body>
+
+</html>

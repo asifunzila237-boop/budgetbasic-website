@@ -1,0 +1,656 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN LOGIN PAGE
+========================================================= */
+
+.login-page {
+    width: min(1180px, calc(100% - 60px));
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    padding: 55px 0;
+
+    display: grid;
+
+    grid-template-columns: 470px 520px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 95px;
+}
+
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.login-card {
+    width: 470px;
+
+    background: #ffffff;
+
+    color: #111a3a;
+
+    border-radius: 14px;
+
+    padding: 38px 38px 34px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.login-logo {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 32px;
+}
+
+.login-logo img {
+    width: 165px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   SOCIAL LOGIN
+========================================================= */
+
+.social-login {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.social-button {
+    width: 100%;
+
+    height: 42px;
+
+    border: 1px solid #d5d5d5;
+
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: #30333b;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.social-button:hover {
+    background: #fafafa;
+
+    border-color: #c5c5c5;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+
+    flex: 0 0 18px;
+
+    display: block;
+}
+
+.google-logo {
+    width: 18px;
+    height: 18px;
+}
+
+.microsoft-logo {
+    width: 17px;
+    height: 17px;
+}
+
+.apple-logo {
+    width: 18px;
+    height: 18px;
+
+    color: #111111;
+}
+
+
+/* =========================================================
+   OR
+========================================================= */
+
+.or-divider {
+    width: 100%;
+
+    margin: 22px 0 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.or-divider span {
+    color: #111111;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.login-form {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 17px;
+
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+
+    margin: 0 0 7px 12px;
+
+    color: #111a3a;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #111a3a;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #0d6efd;
+
+    box-shadow:
+        0 0 0 3px rgba(13, 110, 253, 0.10);
+}
+
+
+/* =========================================================
+   FORM OPTIONS
+========================================================= */
+
+.form-options {
+    width: 100%;
+
+    margin: -2px 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.remember-me {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #111a3a;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.remember-me input {
+    width: 13px;
+    height: 13px;
+
+    accent-color: #0d6efd;
+}
+
+.forgot-password {
+    color: #0d6efd;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.login-button {
+    width: 100%;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #0d6efd;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.login-button:hover {
+    background: #0867eb;
+}
+
+.login-button:active {
+    transform: scale(0.99);
+}
+
+
+/* =========================================================
+   SIGN UP TEXT
+========================================================= */
+
+.signup-text {
+    margin-top: 19px;
+
+    color: #111a3a;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+.signup-text a {
+    color: #0d6efd;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.login-info {
+    width: 100%;
+
+    max-width: 520px;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.login-eyebrow {
+    display: block;
+
+    margin-bottom: 17px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   WAVE
+========================================================= */
+
+.login-wave {
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    line-height: 0.6;
+
+    letter-spacing: -7px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.login-info h1 {
+    max-width: 500px;
+
+    margin: 0 0 28px;
+
+    color: #ffffff;
+
+    font-size: 50px;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.login-description {
+    max-width: 480px;
+
+    margin: 0 0 30px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.login-benefits {
+    width: fit-content;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.login-benefit {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+}
+
+.benefit-icon {
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    border: 1.7px solid #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .login-page {
+        width: min(900px, calc(100% - 40px));
+
+        grid-template-columns: 430px 1fr;
+
+        gap: 55px;
+    }
+
+    .login-card {
+        width: 430px;
+    }
+
+    .login-info h1 {
+        font-size: 44px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .login-page {
+        width: min(500px, calc(100% - 32px));
+
+        min-height: auto;
+
+        padding: 35px 0 50px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 55px;
+    }
+
+    .login-card {
+        width: 100%;
+
+        max-width: 470px;
+    }
+
+    .login-info {
+        width: 100%;
+
+        max-width: 470px;
+
+        text-align: left;
+    }
+
+    .login-info h1 {
+        font-size: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .login-page {
+        width: calc(100% - 24px);
+
+        padding: 25px 0 40px;
+
+        gap: 45px;
+    }
+
+    .login-card {
+        padding: 30px 22px 28px;
+
+        border-radius: 13px;
+    }
+
+    .login-logo {
+        margin-bottom: 28px;
+    }
+
+    .login-logo img {
+        width: 145px;
+    }
+
+    .login-info {
+        max-width: 100%;
+    }
+
+    .login-info h1 {
+        font-size: 36px;
+
+        letter-spacing: -1px;
+    }
+
+    .login-description {
+        font-size: 15px;
+    }
+
+    .login-benefit {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .login-card {
+        padding: 26px 18px 25px;
+    }
+
+    .login-info h1 {
+        font-size: 32px;
+    }
+
+    .login-benefit {
+        font-size: 14px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

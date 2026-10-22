@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn | BudgetBasics</title>
+    <link rel="stylesheet" href="learn.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="#">
+
+                <img
+                    class="desktop-logo"
+                    src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                    alt="BudgetBasics"
+                >
+
+            </a>
+
+
+            <a href="#">
+
+                <img
+                    class="mobile-logo"
+                    src="images/favicon.ico"
+                    alt="B!"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="signup.html" class="btn-cta">
+                    Sign Up
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <div class="menu-toggle" id="mobileMenu">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- SIDEBAR OVERLAY -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- SIDEBAR -->
+
+    <div
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+        <div class="sidebar-header">
+
+            <p>QUICK LINKS</p>
+
+            <span
+                class="close-btn"
+                id="closeBtn"
+            >
+                &times;
+            </span>
+
+        </div>
+
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="index.html">
+                    <span>Home</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="learn.html">
+                    <span>Learn Budgeting</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="calculators.html">
+                    <span>Calculators</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">
+                    <span>Mistakes</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <span>Contact Us</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signup.html">
+                    <span>Sign Up</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="sidebar-footer">
+
+            <div class="social-icons">
+
+                <!-- FACEBOOK -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.204-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- DISCORD -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="slogan">
+                <span>Build Better Money Habits</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+    <!-- =========================================================
+         MOBILE SIDEBAR
+    ========================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <aside
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+        <button
+            class="sidebar-close"
+            id="closeBtn"
+            type="button"
+            aria-label="Close menu"
+        >
+            ×
+        </button>
+
+
+        <div class="sidebar-brand">
+
+            <img
+                src="images/favicon.ico"
+                alt="B!"
+            >
+
+            <span>
+                BudgetBasics
+            </span>
+
+        </div>
+
+
+        <div class="sidebar-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#learn">
+                Learn Budgeting
+            </a>
+
+            <a href="calculators.html">
+                Calculators
+            </a>
+
+            <a href="index.html#mistakes">
+                Money Mistakes
+            </a>
+
+            <a href="index.html#ai-assistant">
+                AI Assistant
+            </a>
+
+            <a href="index.html#contact">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <p>
+                Build Better<br>
+                Money Habits
+            </p>
+
+
+
+        </div>
+
+    </aside>
+
+
+    <main id="learn">
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="learn-hero">
+
+            <div class="learn-hero-inner">
+
+                <div class="learn-hero-content">
+
+                    <span class="learn-eyebrow">
+                        LEARN BUDGETING
+                    </span>
+
+                    <h1>
+                        Learn Skills<br>
+                        <span>That Benefit You</span>
+                    </h1>
+
+                    <p>
+                        Understand your money, make smarter spending
+                        decisions, build savings habits, and avoid
+                        common money mistakes.
+                    </p>
+
+                    <a
+                        href="#budgeting"
+                        class="learn-hero-button"
+                    >
+                        Explore Lessons
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY IT MATTERS
+        ====================================================== -->
+
+        <section class="learn-why">
+
+            <div class="learn-why-inner">
+
+                <div class="learn-why-content">
+
+
+                    <h2>
+                        Build Better Money Skills
+                        <span>
+                            One Habit At A Time
+                        </span>
+                    </h2>
+
+                    <p>
+                        Learning how to manage money early can make everyday financial
+                        decisions easier. Budgeting helps you see where your money goes,
+                        understanding needs and wants helps you make thoughtful spending
+                        choices, and savings goals give your money a clear purpose. These
+                        skills work together to help you build better habits, handle your
+                        priorities, and feel more prepared for future financial decisions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             LEARNING CONTENT
+        ====================================================== -->
+
+        <section class="learn-main">
+
+            <div class="learn-container">
+
+                <div class="learn-main-heading">
+
+                    <span class="learn-eyebrow">
+                        THE LEARNING PATH
+                    </span>
+
+                    <h2>
+                        Learn The Basics
+                        <br>
+                        Build Better Habits.
+                    </h2>
+
+                    <p>
+                        Work through the core lessons below to understand budgeting,
+                        spending choices, savings goals, and common money mistakes.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     01 — BUDGETING BASICS
+                ================================================== -->
+
+                <section
+                    class="learn-topic"
+                    id="budgeting"
+                >
+
+                    <div class="learn-topic-heading">
+
+                        <div class="learn-topic-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <span class="learn-topic-eyebrow">
+                                BUDGETING BASICS
+                            </span>
+
+                            <h3>
+                                Give Your Money<br>
+                                A Direction.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="lesson-layout">
+
+                        <div class="lesson-content">
+
+                            <p class="lesson-intro">
+                                A budget is a simple plan for your money.
+                                It helps you understand how much money
+                                comes in, how much goes out, and what
+                                you can keep for your goals.
+                            </p>
+
+
+                            <article class="lesson-item">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h3>
+                                        Understand Your Income
+                                    </h3>
+
+                                    <p>
+                                        Start by knowing how much money
+                                        you receive regularly. This gives
+                                        you a clear starting point for
+                                        planning your spending.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h3>
+                                        Track Your Expenses
+                                    </h3>
+
+                                    <p>
+                                        Keep track of the things you spend
+                                        money on. Grouping expenses can
+                                        make your spending easier to
+                                        understand.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h3>
+                                        Create a Budget
+                                    </h3>
+
+                                    <p>
+                                        Compare your income with your
+                                        expenses and create a plan that
+                                        fits within the money available.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h3>
+                                        Make Room for Savings
+                                    </h3>
+
+                                    <p>
+                                        After planning your essential
+                                        spending, decide how much you
+                                        can set aside for future goals.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <aside class="lesson-card budget-card">
+
+                            <span class="lesson-card-label">
+                                THE BASIC FORMULA
+                            </span>
+
+                            <div class="formula-line">
+                                <strong>INCOME</strong>
+                                <span>Money coming in</span>
+                            </div>
+
+                            <div class="formula-symbol">
+                                −
+                            </div>
+
+                            <div class="formula-line">
+                                <strong>EXPENSES</strong>
+                                <span>Money going out</span>
+                            </div>
+
+                            <div class="formula-symbol">
+                                =
+                            </div>
+
+                            <div class="formula-line formula-result">
+                                <strong>MONEY LEFT</strong>
+                                <span>What remains</span>
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     02 — NEEDS VS WANTS
+                ================================================== -->
+
+                <section
+                    class="learn-topic"
+                    id="needs-wants"
+                >
+
+                    <div class="learn-topic-heading">
+
+                        <div class="learn-topic-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <span class="learn-topic-eyebrow">
+                                NEEDS VS. WANTS
+                            </span>
+
+                            <h3>
+                                Know The Difference<br>
+                                Before You Spend.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="lesson-layout">
+
+                        <div class="lesson-content">
+
+                            <p class="lesson-intro">
+                                Not every purchase has the same level
+                                of importance. Learning to separate
+                                needs from wants can help you make
+                                more intentional spending decisions.
+                            </p>
+
+
+                            <div class="needs-wants-grid">
+
+                                <article class="choice-card">
+
+                                    <span class="choice-label needs-label">
+                                        NEEDS
+                                    </span>
+
+                                    <h3>
+                                        Things You Need
+                                    </h3>
+
+                                    <p>
+                                        Essentials that support everyday
+                                        life and important responsibilities.
+                                    </p>
+
+                                    <div class="choice-list">
+                                        <span>✓ Food</span>
+                                        <span>✓ Basic transportation</span>
+                                        <span>✓ School supplies</span>
+                                        <span>✓ Necessary bills</span>
+                                    </div>
+
+                                </article>
+
+
+                                <article class="choice-card">
+
+                                    <span class="choice-label wants-label">
+                                        WANTS
+                                    </span>
+
+                                    <h3>
+                                        Things You Want
+                                    </h3>
+
+                                    <p>
+                                        Optional purchases that can make
+                                        life more enjoyable but are not
+                                        essential.
+                                    </p>
+
+                                    <div class="choice-list">
+                                        <span>✓ Entertainment</span>
+                                        <span>✓ Extra clothing</span>
+                                        <span>✓ Upgrades</span>
+                                        <span>✓ Optional subscriptions</span>
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+
+                            <article class="lesson-item">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h3>
+                                        Think Before Spending
+                                    </h3>
+
+                                    <p>
+                                        Before buying something, pause and
+                                        ask whether you actually need it,
+                                        whether you can afford it, and
+                                        whether it fits your priorities.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h3>
+                                        Spend With Purpose
+                                    </h3>
+
+                                    <p>
+                                        Wants are not automatically bad.
+                                        The important part is understanding
+                                        the difference and making deliberate
+                                        choices.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     03 — SAVINGS GOALS
+                ================================================== -->
+
+                <section
+                    class="learn-topic"
+                    id="savings"
+                >
+
+                    <div class="learn-topic-heading">
+
+                        <div class="learn-topic-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <span class="learn-topic-eyebrow">
+                                SAVINGS GOALS
+                            </span>
+
+                            <h3>
+                                Give Your Savings<br>
+                                A Destination.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="lesson-layout">
+
+                        <div class="lesson-content">
+
+                            <p class="lesson-intro">
+                                Saving becomes easier when you know what
+                                you're saving for. A clear goal gives your
+                                money a purpose and lets you track progress.
+                            </p>
+
+
+                            <article class="lesson-item">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h3>
+                                        Set a Savings Goal
+                                    </h3>
+
+                                    <p>
+                                        Choose something you want to save
+                                        for and give the goal a specific
+                                        amount.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h3>
+                                        Estimate the Time
+                                    </h3>
+
+                                    <p>
+                                        Think about how much you can save
+                                        regularly and estimate how long
+                                        the goal could take.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h3>
+                                        Plan Your Savings
+                                    </h3>
+
+                                    <p>
+                                        Choose an amount that works with
+                                        your budget and aim to save it
+                                        consistently.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="lesson-item">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h3>
+                                        Reach Your Goal
+                                    </h3>
+
+                                    <p>
+                                        Keep track of your progress and
+                                        adjust your plan when necessary.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <aside class="lesson-card savings-card">
+
+                            <span class="lesson-card-label">
+                                EXAMPLE GOAL
+                            </span>
+
+                            <div class="goal-amount">
+                                $1,200
+                            </div>
+
+                            <div class="goal-bar">
+                                <span></span>
+                            </div>
+
+                            <div class="goal-status">
+                                <strong>67%</strong>
+                                <span>progress</span>
+                            </div>
+
+                            <p>
+                                Consistent progress matters more than
+                                starting with a huge amount.
+                            </p>
+
+                        </aside>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     04 — MONEY MISTAKES
+                ================================================== -->
+
+                <section
+                    class="learn-topic"
+                    id="mistakes"
+                >
+
+                    <div class="learn-topic-heading">
+
+                        <div class="learn-topic-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <span class="learn-topic-eyebrow">
+                                MONEY MISTAKES
+                            </span>
+
+                            <h3>
+                                Small Habits Can<br>
+                                Affect Your Money.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="mistakes-intro">
+                        Understanding common money mistakes can help
+                        you recognize spending habits that make budgeting
+                        and saving more difficult.
+                    </p>
+
+
+                    <div class="mistake-grid">
+
+                        <article class="mistake-card">
+
+                            <span>01</span>
+
+                            <h3>
+                                Impulse Buying
+                            </h3>
+
+                            <p>
+                                Buying something immediately without
+                                considering whether it fits your budget
+                                can affect your spending plan.
+                            </p>
+
+                        </article>
+
+
+                        <article class="mistake-card">
+
+                            <span>02</span>
+
+                            <h3>
+                                Ignoring Small Expenses
+                            </h3>
+
+                            <p>
+                                Small purchases can add up over time.
+                                Tracking them gives you a clearer picture
+                                of your actual spending.
+                            </p>
+
+                        </article>
+
+
+                        <article class="mistake-card">
+
+                            <span>03</span>
+
+                            <h3>
+                                Not Watching Spending Habits
+                            </h3>
+
+                            <p>
+                                Repeating the same spending patterns
+                                without reviewing them can make financial
+                                goals harder to manage.
+                            </p>
+
+                        </article>
+
+
+                        <article class="mistake-card">
+
+                            <span>04</span>
+
+                            <h3>
+                                Spending Without a Plan
+                            </h3>
+
+                            <p>
+                                Having no spending plan can make it more
+                                difficult to balance current expenses and
+                                future goals.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="mistakes-bottom">
+
+                        <h3>
+                            The Goal Isn't Perfection
+                        </h3>
+
+                        <p>
+                            The goal is to understand your habits,
+                            learn from your choices, and gradually
+                            build better money habits.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUICK CHECK
+        ====================================================== -->
+
+        <section class="learn-quick">
+
+            <div class="learn-quick-inner">
+
+                <div class="learn-quick-copy">
+
+                    <span class="learn-eyebrow">
+                        QUICK CHECK
+                    </span>
+
+                    <h2>
+                        Ask Yourself
+                        <br>
+                        <span>3 Simple Questions.</span>
+                    </h2>
+
+                    <p>
+                        A quick check can help you pause, review your choices,
+                        and connect what you've learned to everyday decisions.
+                    </p>
+
+                </div>
+
+
+                <div class="learn-check-list">
+
+                    <div class="learn-check-item">
+
+                        <span>01</span>
+
+                        <div>
+
+                            <strong>
+                                Do I Know Where My Money Goes?
+                            </strong>
+
+                            <p>
+                                Can I clearly explain my income, regular expenses,
+                                and what I usually have left?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learn-check-item">
+
+                        <span>02</span>
+
+                        <div>
+
+                            <strong>
+                                Is This A Need Or A Want?
+                            </strong>
+
+                            <p>
+                                Before spending, can I tell whether the purchase
+                                is essential or simply something I would like?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learn-check-item">
+
+                        <span>03</span>
+
+                        <div>
+
+                            <strong>
+                                Am I Working Toward A Goal?
+                            </strong>
+
+                            <p>
+                                Do I have a savings goal and a simple plan for
+                                making steady progress toward it?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="learn-final-cta">
+
+            <div class="learn-final-content">
+
+                <span class="learn-final-eyebrow">
+                    KEEP LEARNING
+                </span>
+
+                <h2>
+                    Ready To Put It
+                    <br>
+                    <span>Into Practice?</span>
+                </h2>
+
+                <p>
+                    Put what you've learned into practice with
+                    the BudgetBasics calculators.
+                </p>
+
+                <a
+                    href="calculators.html"
+                    class="learn-final-button"
+                >
+                    Open Calculators
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <!-- CURVE -->
+
+    <svg
+        class="footer-curve"
+        viewBox="0 0 1000 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+    >
+
+        <path
+            d="M0 0 H1000 V145 Q500 0 0 145 Z"
+            fill="#ffffff"
+        ></path>
+
+    </svg>
+
+
+
+    <div class="footer-inner">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <div class="footer-logo">
+
+                <img
+                    src="images/ChatGPT Image Sep 23, 2026, 08_03_00 PM.png"
+                    alt="B!"
+                >
+
+            </div>
+
+
+            <p>
+                © 2026 BudgetBasics.<br>
+                All rights reserved.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LEARN -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                LEARN
+            </h4>
+
+
+            <a href="learn.html#budgeting">
+                Budgeting Basics
+            </a>
+
+
+            <a href="learn.html#needs-wants">
+                Needs vs. Wants
+            </a>
+
+
+            <a href="learn.html#savings">
+                Savings Goals
+            </a>
+
+
+            <a href="learn.html#mistakes">
+                Money Mistakes
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                TOOLS
+            </h4>
+
+
+            <a href="calculators.html#budget-calculator">
+                Budget Calculator
+            </a>
+
+
+            <a href="calculators.html#savings-calculator">
+                Savings Calculator
+            </a>
+
+
+            <a href="calculators.html#needs-calculator">
+                Needs vs. Wants
+            </a>
+
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                COMPANY
+            </h4>
+
+
+            <a href="https://www.instagram.com">
+                Instagram
+            </a>
+
+            <a href="https://www.discord.com">
+                Discord
+            </a>
+
+            <a href="https://www.linkedin.com">
+                LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com">
+                Facebook
+            </a>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- =========================================================
+     BUDGETBASICS AI ASSISTANT
+========================================================= -->
+
+<div class="ai-assistant-widget">
+
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="ai-assistant-backdrop"
+        id="aiAssistantBackdrop"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         FLOATING AI BUTTON
+    ====================================================== -->
+
+    <button
+        class="ai-assistant-launcher"
+        id="aiAssistantLauncher"
+        type="button"
+        aria-label="Open BudgetBasics AI Assistant"
+        aria-expanded="false"
+    >
+
+        <!-- BOT BADGE -->
+
+        <span class="ai-launcher-badge">
+
+            <!-- ROBOT ICON -->
+
+            <svg
+                class="ai-launcher-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+
+                <!-- Antenna -->
+
+                <path
+                    d="M12 5V3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+                <circle
+                    cx="12"
+                    cy="2.5"
+                    r="1"
+                    fill="currentColor"
+                />
+
+
+                <!-- Robot Head -->
+
+                <rect
+                    x="4"
+                    y="6"
+                    width="16"
+                    height="13"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+
+                <!-- Eyes -->
+
+                <circle
+                    cx="9"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+                <circle
+                    cx="15"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+
+                <!-- Mouth -->
+
+                <path
+                    d="M9 15H15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+
+                <!-- Side Details -->
+
+                <path
+                    d="M4 11H2.8"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M21.2 11H20"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+
+            <!-- ONLINE DOT -->
+
+            <span
+                class="ai-status-dot"
+                aria-hidden="true"
+            ></span>
+
+        </span>
+
+
+        <!-- CLOSE ICON -->
+
+        <span
+            class="ai-launcher-close"
+            aria-hidden="true"
+        >
+            ×
+        </span>
+
+
+        <!-- HOVER LABEL -->
+
+        <span
+            class="ai-launcher-label"
+            aria-hidden="true"
+        >
+            BudgetBasics AI
+        </span>
+
+    </button>
+
+
+    <!-- =====================================================
+         CHAT PANEL
+    ====================================================== -->
+
+    <section
+        class="ai-assistant-panel"
+        id="aiAssistantPanel"
+        aria-hidden="true"
+    >
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="ai-assistant-header">
+
+            <div class="ai-assistant-title-wrap">
+
+
+                <!-- BOT AVATAR -->
+
+                <div class="ai-assistant-avatar">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+
+                        <!-- Antenna -->
+
+                        <path
+                            d="M12 5V3"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="2.5"
+                            r="1"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Robot Head -->
+
+                        <rect
+                            x="4"
+                            y="6"
+                            width="16"
+                            height="13"
+                            rx="4"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+
+
+                        <!-- Eyes -->
+
+                        <circle
+                            cx="9"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+                        <circle
+                            cx="15"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Mouth -->
+
+                        <path
+                            d="M9 15H15"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- Side Details -->
+
+                        <path
+                            d="M4 11H2.8"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M21.2 11H20"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <div>
+
+                    <h3>
+                        BudgetBasics AI
+                    </h3>
+
+                    <span>
+                        Money Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="ai-assistant-close"
+                id="aiAssistantClose"
+                type="button"
+                aria-label="Close BudgetBasics AI Assistant"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <div
+            class="ai-assistant-messages"
+            id="aiAssistantMessages"
+            aria-live="polite"
+        >
+
+
+            <!-- INITIAL MESSAGE -->
+
+            <div
+                class="ai-message ai-message-bot"
+            >
+
+                <div
+                    class="ai-message-avatar"
+                >
+                    AI
+                </div>
+
+                <div
+                    class="ai-message-bubble"
+                >
+                    Hi! I’m the BudgetBasics AI Assistant. Ask me about budgeting, saving, spending, or everyday money decisions.
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK QUESTIONS
+            ================================================== -->
+
+            <div
+                class="ai-quick-start"
+                id="aiQuickStart"
+            >
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How do I make a budget?"
+                >
+                    How do I make a budget?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="What is the difference between needs and wants?"
+                >
+                    Needs vs. wants?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How can I start saving money?"
+                >
+                    How can I save money?
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INPUT AREA
+        ================================================== -->
+
+        <form
+            class="ai-assistant-input-area"
+            id="aiAssistantForm"
+        >
+
+            <input
+                type="text"
+                id="aiAssistantInput"
+                class="ai-assistant-input"
+                placeholder="Ask a money question..."
+                autocomplete="off"
+                aria-label="Ask a money question"
+            />
+
+
+            <!-- SEND -->
+
+            <button
+                type="submit"
+                class="ai-assistant-send"
+                aria-label="Send message"
+            >
+
+                <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M21 3L10.5 13.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M21 3L14.3 21L10.5 13.5L3 9.7L21 3Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

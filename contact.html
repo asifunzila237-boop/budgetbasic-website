@@ -1,0 +1,2626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact Us | BudgetBasics</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link
+        rel="icon"
+        type="image/ico"
+        sizes="32x32"
+        href="images/favicon.ico"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="#">
+
+                <img
+                    class="desktop-logo"
+                    src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                    alt="BudgetBasics"
+                >
+
+            </a>
+
+
+            <a href="#">
+
+                <img
+                    class="mobile-logo"
+                    src="images/favicon.ico"
+                    alt="B!"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="signup.html" class="btn-cta">
+                    Sign Up
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <div class="menu-toggle" id="mobileMenu">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- SIDEBAR OVERLAY -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- SIDEBAR -->
+
+    <div
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+        <div class="sidebar-header">
+
+            <p>QUICK LINKS</p>
+
+            <span
+                class="close-btn"
+                id="closeBtn"
+            >
+                &times;
+            </span>
+
+        </div>
+
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="index.html">
+                    <span>Home</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="learn.html">
+                    <span>Learn Budgeting</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="calculators.html">
+                    <span>Calculators</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">
+                    <span>Mistakes</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <span>Contact Us</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signup.html">
+                    <span>Sign Up</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="sidebar-footer">
+
+            <div class="social-icons">
+
+                <!-- FACEBOOK -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                    style="margin-top: 2px;"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.204-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- DISCORD -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="slogan">
+                <span>Build Better Money Habits</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================================
+     INTRO SECTION
+========================================================= -->
+
+<section class="contact-intro-section">
+
+    <div class="contact-intro-inner">
+
+        <span class="contact-intro-label">
+            CONTACT US
+        </span>
+
+        <h1>
+            We’re Listening
+        </h1>
+
+        <p>
+            Have an idea, suggestion, question, or feedback about
+            BudgetBasics? We’d love to hear what you think and what
+            could make your learning experience better.
+        </p>
+
+        <div class="contact-intro-note">
+            Your feedback helps us keep BudgetBasics useful,
+            simple, and student-friendly.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT FORM / YELLOW SECTION
+========================================================= -->
+
+<section class="contact-wave-section">
+
+
+    <!-- =====================================================
+         TOP WAVE
+    ====================================================== -->
+
+    <div class="wave wave-top">
+
+        <svg
+            viewBox="0 0 1440 180"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+        >
+
+            <path
+                d="
+                    M0,90
+                    C180,155 340,155 520,92
+                    C700,28 845,25 1035,88
+                    C1200,142 1310,135 1440,76
+                    L1440,0
+                    L0,0
+                    Z
+                "
+            ></path>
+
+        </svg>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <div class="contact-wave-inner">
+
+
+        <!-- LEFT COPY -->
+
+        <div class="contact-copy">
+
+            <span class="contact-section-label">
+                SEND US A MESSAGE
+            </span>
+
+            <h2>
+                Tell us<br>
+                what’s on your mind.
+            </h2>
+
+            <p>
+                Whether you spotted something that could be improved,
+                have a question about the website, or simply want to
+                share an idea, send us a message.
+            </p>
+
+
+            <div class="contact-copy-highlight">
+
+                <span class="highlight-line"></span>
+
+                <p>
+                    We’re always working to make learning money skills
+                    clearer and more practical for students.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT FORM -->
+
+        <div class="contact-form-card">
+
+            <form id="contactForm">
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Your first name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Your last name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="What would you like to talk about?"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="contact-submit-button"
+                >
+                    Send Message
+                </button>
+
+
+                <p
+                    class="form-status"
+                    id="formStatus"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BOTTOM WAVE
+    ====================================================== -->
+
+    <div class="wave wave-bottom">
+
+        <svg
+            viewBox="0 0 1440 180"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+        >
+
+            <path
+                d="
+                    M0,92
+                    C180,30 340,25 520,88
+                    C700,150 850,152 1035,88
+                    C1200,32 1310,40 1440,102
+                    L1440,180
+                    L0,180
+                    Z
+                "
+            ></path>
+
+        </svg>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="contact-final-section">
+
+    <div class="contact-final-inner">
+
+        <span class="contact-final-label">
+            KEEP EXPLORING
+        </span>
+
+        <h2>
+            Keep Building<br>
+            Better Money Habits
+        </h2>
+
+        <p>
+            Explore BudgetBasics and continue learning practical
+            skills you can use in everyday life.
+        </p>
+
+        <a
+            href="learn.html"
+            class="contact-final-button"
+        >
+            Start Learning
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <!-- CURVE -->
+
+    <svg
+        class="footer-curve"
+        viewBox="0 0 1000 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+    >
+
+        <path
+            d="M0 0 H1000 V145 Q500 0 0 145 Z"
+            fill="#ffffff"
+        ></path>
+
+    </svg>
+
+
+
+    <div class="footer-inner">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <div class="footer-logo">
+
+                <img
+                    src="images/ChatGPT Image Sep 23, 2026, 08_03_00 PM.png"
+                    alt="B!"
+                >
+
+            </div>
+
+
+            <p>
+                © 2026 BudgetBasics.<br>
+                All rights reserved.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LEARN -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                LEARN
+            </h4>
+
+
+            <a href="learn.html#budgeting">
+                Budgeting Basics
+            </a>
+
+
+            <a href="learn.html#needs-wants">
+                Needs vs. Wants
+            </a>
+
+
+            <a href="learn.html#savings">
+                Savings Goals
+            </a>
+
+
+            <a href="learn.html#mistakes">
+                Money Mistakes
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                TOOLS
+            </h4>
+
+
+            <a href="calculators.html#budget-calculator">
+                Budget Calculator
+            </a>
+
+
+            <a href="calculators.html#savings-calculator">
+                Savings Calculator
+            </a>
+
+
+            <a href="calculators.html#needs-calculator">
+                Needs vs. Wants
+            </a>
+
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                COMPANY
+            </h4>
+
+
+            <a href="https://www.instagram.com">
+                Instagram
+            </a>
+
+            <a href="https://www.discord.com">
+                Discord
+            </a>
+
+            <a href="https://www.linkedin.com">
+                LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com">
+                Facebook
+            </a>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- =========================================================
+     BUDGETBASICS AI ASSISTANT
+========================================================= -->
+
+<div class="ai-assistant-widget">
+
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="ai-assistant-backdrop"
+        id="aiAssistantBackdrop"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         FLOATING AI BUTTON
+    ====================================================== -->
+
+    <button
+        class="ai-assistant-launcher"
+        id="aiAssistantLauncher"
+        type="button"
+        aria-label="Open BudgetBasics AI Assistant"
+        aria-expanded="false"
+    >
+
+        <!-- BOT BADGE -->
+
+        <span class="ai-launcher-badge">
+
+            <!-- ROBOT ICON -->
+
+            <svg
+                class="ai-launcher-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+
+                <!-- Antenna -->
+
+                <path
+                    d="M12 5V3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+                <circle
+                    cx="12"
+                    cy="2.5"
+                    r="1"
+                    fill="currentColor"
+                />
+
+
+                <!-- Robot Head -->
+
+                <rect
+                    x="4"
+                    y="6"
+                    width="16"
+                    height="13"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+
+                <!-- Eyes -->
+
+                <circle
+                    cx="9"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+                <circle
+                    cx="15"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+
+                <!-- Mouth -->
+
+                <path
+                    d="M9 15H15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+
+                <!-- Side Details -->
+
+                <path
+                    d="M4 11H2.8"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M21.2 11H20"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+
+            <!-- ONLINE DOT -->
+
+            <span
+                class="ai-status-dot"
+                aria-hidden="true"
+            ></span>
+
+        </span>
+
+
+        <!-- CLOSE ICON -->
+
+        <span
+            class="ai-launcher-close"
+            aria-hidden="true"
+        >
+            ×
+        </span>
+
+
+        <!-- HOVER LABEL -->
+
+        <span
+            class="ai-launcher-label"
+            aria-hidden="true"
+        >
+            BudgetBasics AI
+        </span>
+
+    </button>
+
+
+    <!-- =====================================================
+         CHAT PANEL
+    ====================================================== -->
+
+    <section
+        class="ai-assistant-panel"
+        id="aiAssistantPanel"
+        aria-hidden="true"
+    >
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="ai-assistant-header">
+
+            <div class="ai-assistant-title-wrap">
+
+
+                <!-- BOT AVATAR -->
+
+                <div class="ai-assistant-avatar">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+
+                        <!-- Antenna -->
+
+                        <path
+                            d="M12 5V3"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="2.5"
+                            r="1"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Robot Head -->
+
+                        <rect
+                            x="4"
+                            y="6"
+                            width="16"
+                            height="13"
+                            rx="4"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+
+
+                        <!-- Eyes -->
+
+                        <circle
+                            cx="9"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+                        <circle
+                            cx="15"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Mouth -->
+
+                        <path
+                            d="M9 15H15"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- Side Details -->
+
+                        <path
+                            d="M4 11H2.8"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M21.2 11H20"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <div>
+
+                    <h3>
+                        BudgetBasics AI
+                    </h3>
+
+                    <span>
+                        Money Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="ai-assistant-close"
+                id="aiAssistantClose"
+                type="button"
+                aria-label="Close BudgetBasics AI Assistant"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <div
+            class="ai-assistant-messages"
+            id="aiAssistantMessages"
+            aria-live="polite"
+        >
+
+
+            <!-- INITIAL MESSAGE -->
+
+            <div
+                class="ai-message ai-message-bot"
+            >
+
+                <div
+                    class="ai-message-avatar"
+                >
+                    AI
+                </div>
+
+                <div
+                    class="ai-message-bubble"
+                >
+                    Hi! I’m the BudgetBasics AI Assistant. Ask me about budgeting, saving, spending, or everyday money decisions.
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK QUESTIONS
+            ================================================== -->
+
+            <div
+                class="ai-quick-start"
+                id="aiQuickStart"
+            >
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How do I make a budget?"
+                >
+                    How do I make a budget?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="What is the difference between needs and wants?"
+                >
+                    Needs vs. wants?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How can I start saving money?"
+                >
+                    How can I save money?
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INPUT AREA
+        ================================================== -->
+
+        <form
+            class="ai-assistant-input-area"
+            id="aiAssistantForm"
+        >
+
+            <input
+                type="text"
+                id="aiAssistantInput"
+                class="ai-assistant-input"
+                placeholder="Ask a money question..."
+                autocomplete="off"
+                aria-label="Ask a money question"
+            />
+
+
+            <!-- SEND -->
+
+            <button
+                type="submit"
+                class="ai-assistant-send"
+                aria-label="Send message"
+            >
+
+                <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M21 3L10.5 13.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M21 3L14.3 21L10.5 13.5L3 9.7L21 3Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+
+<script>
+
+
+    const mobileMenu = document.getElementById('mobileMenu');
+const sidebarMenu = document.getElementById('sidebarMenu');
+const sidebarOverlay = document.getElementById('sidebarOverlay');
+const closeBtn = document.getElementById('closeBtn');
+const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+
+
+// =========================================================
+// SIDEBAR
+// =========================================================
+
+// Open Sidebar
+function openSidebar() {
+    sidebarMenu.classList.add('active');
+    sidebarOverlay.classList.add('active');
+}
+
+// Close Sidebar
+function closeSidebar() {
+    sidebarMenu.classList.remove('active');
+    sidebarOverlay.classList.remove('active');
+}
+
+
+// Sidebar controls
+mobileMenu.onclick = openSidebar;
+closeBtn.onclick = closeSidebar;
+sidebarOverlay.onclick = closeSidebar;
+
+
+// Close sidebar automatically when a link inside is clicked
+sidebarLinks.forEach(link => {
+    link.onclick = closeSidebar;
+});
+
+
+
+/* =========================================================
+   VIDEO PLAY / PAUSE TOGGLE
+========================================================= */
+
+const budgetVideo = document.getElementById("budgetVideo");
+const videoToggle = document.getElementById("videoToggle");
+
+if (budgetVideo && videoToggle) {
+
+    videoToggle.addEventListener("click", () => {
+
+        if (budgetVideo.paused) {
+
+            budgetVideo.play();
+
+            videoToggle.classList.remove("paused");
+
+            videoToggle.setAttribute(
+                "aria-label",
+                "Pause video"
+            );
+
+        } else {
+
+            budgetVideo.pause();
+
+            videoToggle.classList.add("paused");
+
+            videoToggle.setAttribute(
+                "aria-label",
+                "Play video"
+            );
+
+        }
+
+    });
+
+}
+
+
+
+/* =========================================================
+   BUDGETBASICS — TESTIMONIAL CAROUSEL
+   10 TESTIMONIALS / 10 SECOND CYCLE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const card = document.querySelector(".bb-testimonial-card");
+    const avatar = document.querySelector(".bb-avatar");
+    const studentName = document.querySelector(".bb-student-info strong");
+    const studentRole = document.querySelector(".bb-student-info span");
+    const quote = document.querySelector(".bb-quote");
+    const progressBar = document.querySelector(".bb-progress-bar");
+    const currentCounter = document.querySelector(".bb-current");
+
+
+    if (
+        !card ||
+        !avatar ||
+        !studentName ||
+        !studentRole ||
+        !quote ||
+        !progressBar
+    ) {
+        return;
+    }
+
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    const testimonials = [
+
+        {
+            name: "Ayaan",
+            role: "Web Development Learner",
+            quote: "BudgetBasics made tracking expenses and understanding financial fundamentals so simple and practical.",
+            initial: "A"
+        },
+
+        {
+            name: "Sarah",
+            role: "Computer Science Student",
+            quote: "I finally understood where my money was going and how small spending habits can make a difference.",
+            initial: "S"
+        },
+
+        {
+            name: "Hamza",
+            role: "College Student",
+            quote: "The lessons are straightforward and actually useful. Budgeting doesn't feel confusing anymore.",
+            initial: "H"
+        },
+
+        {
+            name: "Maya",
+            role: "Business Student",
+            quote: "BudgetBasics helped me organize my expenses and become much more aware of my everyday spending.",
+            initial: "M"
+        },
+
+        {
+            name: "Daniel",
+            role: "University Student",
+            quote: "Everything is explained in a way that makes financial concepts much easier to understand.",
+            initial: "D"
+        },
+
+        {
+            name: "Zoya",
+            role: "Design Student",
+            quote: "I liked how practical everything was. I could immediately apply what I learned to my own budget.",
+            initial: "Z"
+        },
+
+        {
+            name: "Ali",
+            role: "Software Engineering Student",
+            quote: "The simple explanations helped me understand budgeting without feeling overwhelmed by financial terms.",
+            initial: "A"
+        },
+
+        {
+            name: "Emma",
+            role: "College Learner",
+            quote: "BudgetBasics gave me a much clearer idea of how to manage my money and plan my expenses.",
+            initial: "E"
+        },
+
+        {
+            name: "Usman",
+            role: "Student & Freelancer",
+            quote: "Learning how to separate needs from wants completely changed the way I look at my spending.",
+            initial: "U"
+        },
+
+        {
+            name: "Noor",
+            role: "Finance Learner",
+            quote: "It's simple, practical, and easy to follow. I actually enjoy learning about money now.",
+            initial: "N"
+        }
+
+    ];
+
+
+
+    /* =====================================================
+       SETTINGS
+    ===================================================== */
+
+    const SLIDE_DURATION = 10000;
+    const FADE_DURATION = 450;
+
+    let currentIndex = 0;
+
+    let timer = null;
+
+    let isPaused = false;
+
+    let startTime = 0;
+    let elapsedTime = 0;
+
+
+
+    /* =====================================================
+       UPDATE TESTIMONIAL
+    ===================================================== */
+
+    function updateTestimonial(index) {
+
+        const item = testimonials[index];
+
+        avatar.textContent = item.initial;
+
+        studentName.textContent = item.name;
+
+        studentRole.textContent = item.role;
+
+        quote.textContent = `“${item.quote}”`;
+
+        if (currentCounter) {
+
+            currentCounter.textContent =
+                String(index + 1).padStart(2, "0");
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       GET SLIDER DISTANCE
+
+       Slider = 10% width.
+       It travels from 0 → 90%.
+    ===================================================== */
+
+    function getTravelDistance() {
+
+        const trackWidth =
+            progressBar.parentElement.offsetWidth;
+
+        const sliderWidth =
+            progressBar.offsetWidth;
+
+        return trackWidth - sliderWidth;
+
+    }
+
+
+
+    /* =====================================================
+       START SLIDER
+    ===================================================== */
+
+    function startSlider(
+        remaining = SLIDE_DURATION
+    ) {
+
+        const distance =
+            getTravelDistance();
+
+        const progress =
+            elapsedTime / SLIDE_DURATION;
+
+        const currentPosition =
+            distance * progress;
+
+
+        progressBar.style.transition =
+            "none";
+
+        progressBar.style.transform =
+            `translateX(${currentPosition}px)`;
+
+
+        /* Force browser reflow */
+
+        progressBar.offsetHeight;
+
+
+        if (!isPaused) {
+
+            const remainingDistance =
+                distance - currentPosition;
+
+            const speed =
+                remainingDistance / remaining;
+
+
+            progressBar.style.transition =
+                `transform ${remaining}ms linear`;
+
+            progressBar.style.transform =
+                `translateX(${distance}px)`;
+
+
+            startTime =
+                performance.now() - elapsedTime;
+
+
+            timer = setTimeout(() => {
+
+                if (!isPaused) {
+
+                    nextTestimonial();
+
+                }
+
+            }, remaining);
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       PAUSE
+
+       Freezes at EXACT current position.
+    ===================================================== */
+
+    function pauseSlider() {
+
+        if (isPaused) return;
+
+        isPaused = true;
+
+        clearTimeout(timer);
+
+
+        const now =
+            performance.now();
+
+
+        elapsedTime =
+            Math.min(
+                now - startTime,
+                SLIDE_DURATION
+            );
+
+
+        const distance =
+            getTravelDistance();
+
+
+        const progress =
+            elapsedTime / SLIDE_DURATION;
+
+
+        const currentPosition =
+            distance * progress;
+
+
+        progressBar.style.transition =
+            "none";
+
+        progressBar.style.transform =
+            `translateX(${currentPosition}px)`;
+
+    }
+
+
+
+    /* =====================================================
+       RESUME
+    ===================================================== */
+
+    function resumeSlider() {
+
+        if (!isPaused) return;
+
+        isPaused = false;
+
+
+        const remaining =
+            Math.max(
+                SLIDE_DURATION - elapsedTime,
+                0
+            );
+
+
+        startSlider(remaining);
+
+    }
+
+
+
+    /* =====================================================
+       NEXT TESTIMONIAL
+    ===================================================== */
+
+    function nextTestimonial() {
+
+        clearTimeout(timer);
+
+        isPaused = false;
+
+        elapsedTime = 0;
+
+
+        /* -----------------------------
+           LEAVE
+        ----------------------------- */
+
+        card.classList.remove(
+            "is-visible"
+        );
+
+        card.classList.add(
+            "is-leaving"
+        );
+
+
+        setTimeout(() => {
+
+            currentIndex++;
+
+
+            if (
+                currentIndex >=
+                testimonials.length
+            ) {
+
+                currentIndex = 0;
+
+            }
+
+
+
+            /* -----------------------------
+               UPDATE CONTENT
+            ----------------------------- */
+
+            updateTestimonial(
+                currentIndex
+            );
+
+
+
+            /* -----------------------------
+               RESET CARD
+            ----------------------------- */
+
+            card.classList.remove(
+                "is-leaving"
+            );
+
+            card.classList.add(
+                "is-entering"
+            );
+
+
+
+            /* -----------------------------
+               RESET SLIDER
+            ----------------------------- */
+
+            progressBar.style.transition =
+                "none";
+
+            progressBar.style.transform =
+                "translateX(0)";
+
+
+            /* Force reflow */
+
+            progressBar.offsetHeight;
+
+
+
+            /* -----------------------------
+               ENTER
+            ----------------------------- */
+
+            requestAnimationFrame(() => {
+
+                card.classList.remove(
+                    "is-entering"
+                );
+
+                card.classList.add(
+                    "is-visible"
+                );
+
+            });
+
+
+
+            /* -----------------------------
+               NEW 10 SECOND CYCLE
+            ----------------------------- */
+
+            startTime =
+                performance.now();
+
+            elapsedTime = 0;
+
+            startSlider(
+                SLIDE_DURATION
+            );
+
+
+        }, FADE_DURATION);
+
+    }
+
+
+
+    /* =====================================================
+       INITIALIZE
+    ===================================================== */
+
+    updateTestimonial(
+        currentIndex
+    );
+
+
+    card.classList.add(
+        "is-visible"
+    );
+
+
+    progressBar.style.transition =
+        "none";
+
+    progressBar.style.transform =
+        "translateX(0)";
+
+
+    requestAnimationFrame(() => {
+
+        startTime =
+            performance.now();
+
+        elapsedTime = 0;
+
+        startSlider(
+            SLIDE_DURATION
+        );
+
+    });
+
+
+
+    /* =====================================================
+       HOVER PAUSE
+    ===================================================== */
+
+    card.addEventListener(
+        "mouseenter",
+        () => {
+
+            pauseSlider();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       HOVER RESUME
+    ===================================================== */
+
+    card.addEventListener(
+        "mouseleave",
+        () => {
+
+            resumeSlider();
+
+        }
+    );
+
+});
+
+
+
+
+/* =========================================================
+   MONEY MISTAKES VIDEO — PLAY / PAUSE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const moneyMistakesVideo =
+        document.getElementById("moneyMistakesVideo");
+
+    const moneyMistakesVideoToggle =
+        document.getElementById("moneyMistakesVideoToggle");
+
+    if (
+        !moneyMistakesVideo ||
+        !moneyMistakesVideoToggle
+    ) {
+        return;
+    }
+
+
+    const pauseIcon =
+        moneyMistakesVideoToggle.querySelector(".pause-icon");
+
+    const playIcon =
+        moneyMistakesVideoToggle.querySelector(".play-icon");
+
+
+    function updateMoneyMistakesVideoButton() {
+
+        if (
+            moneyMistakesVideo.paused ||
+            moneyMistakesVideo.ended
+        ) {
+
+            moneyMistakesVideoToggle.classList.add(
+                "paused"
+            );
+
+            moneyMistakesVideoToggle.setAttribute(
+                "aria-label",
+                "Play video"
+            );
+
+
+            if (pauseIcon) {
+                pauseIcon.style.display = "none";
+            }
+
+            if (playIcon) {
+                playIcon.style.display = "block";
+            }
+
+        } else {
+
+            moneyMistakesVideoToggle.classList.remove(
+                "paused"
+            );
+
+            moneyMistakesVideoToggle.setAttribute(
+                "aria-label",
+                "Pause video"
+            );
+
+
+            if (pauseIcon) {
+                pauseIcon.style.display = "block";
+            }
+
+            if (playIcon) {
+                playIcon.style.display = "none";
+            }
+
+        }
+
+    }
+
+
+    moneyMistakesVideoToggle.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+
+            if (moneyMistakesVideo.paused) {
+
+                const playPromise =
+                    moneyMistakesVideo.play();
+
+
+                if (
+                    playPromise !== undefined
+                ) {
+
+                    playPromise
+                        .then(
+                            updateMoneyMistakesVideoButton
+                        )
+                        .catch(
+                            updateMoneyMistakesVideoButton
+                        );
+
+                } else {
+
+                    updateMoneyMistakesVideoButton();
+
+                }
+
+            } else {
+
+                moneyMistakesVideo.pause();
+
+                updateMoneyMistakesVideoButton();
+
+            }
+
+        }
+    );
+
+
+    moneyMistakesVideo.addEventListener(
+        "play",
+        updateMoneyMistakesVideoButton
+    );
+
+
+    moneyMistakesVideo.addEventListener(
+        "pause",
+        updateMoneyMistakesVideoButton
+    );
+
+
+    moneyMistakesVideo.addEventListener(
+        "ended",
+        updateMoneyMistakesVideoButton
+    );
+
+
+    updateMoneyMistakesVideoButton();
+
+});
+
+
+
+
+
+
+/* =========================================================
+   BUDGETBASICS AI ASSISTANT
+========================================================= */
+
+(function () {
+
+    "use strict";
+
+
+    function initBudgetBasicsAI() {
+
+        /* =================================================
+           ELEMENTS
+        ================================================= */
+
+        const launcher =
+            document.getElementById(
+                "aiAssistantLauncher"
+            );
+
+        const panel =
+            document.getElementById(
+                "aiAssistantPanel"
+            );
+
+        const backdrop =
+            document.getElementById(
+                "aiAssistantBackdrop"
+            );
+
+        const closeButton =
+            document.getElementById(
+                "aiAssistantClose"
+            );
+
+        const form =
+            document.getElementById(
+                "aiAssistantForm"
+            );
+
+        const input =
+            document.getElementById(
+                "aiAssistantInput"
+            );
+
+        const messages =
+            document.getElementById(
+                "aiAssistantMessages"
+            );
+
+        const quickStart =
+            document.getElementById(
+                "aiQuickStart"
+            );
+
+
+        /* =================================================
+           CHECK
+        ================================================= */
+
+        if (
+            !launcher ||
+            !panel ||
+            !backdrop ||
+            !closeButton ||
+            !form ||
+            !input ||
+            !messages
+        ) {
+            return;
+        }
+
+
+        /* =================================================
+           OPEN
+        ================================================= */
+
+        function openAssistant() {
+
+            launcher.classList.add("active");
+
+            panel.classList.add("active");
+
+            backdrop.classList.add("active");
+
+            launcher.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+            panel.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+            backdrop.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+            setTimeout(function () {
+
+                input.focus();
+
+            }, 200);
+        }
+
+
+        /* =================================================
+           CLOSE
+        ================================================= */
+
+        function closeAssistant() {
+
+            launcher.classList.remove("active");
+
+            panel.classList.remove("active");
+
+            backdrop.classList.remove("active");
+
+            launcher.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            panel.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            backdrop.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+        }
+
+
+        /* =================================================
+           LAUNCHER
+        ================================================= */
+
+        launcher.addEventListener(
+            "click",
+            function () {
+
+                if (
+                    panel.classList.contains("active")
+                ) {
+
+                    closeAssistant();
+
+                } else {
+
+                    openAssistant();
+
+                }
+
+            }
+        );
+
+
+        /* =================================================
+           CLOSE BUTTON
+        ================================================= */
+
+        closeButton.addEventListener(
+            "click",
+            function () {
+
+                closeAssistant();
+
+            }
+        );
+
+
+        /* =================================================
+           BACKDROP
+        ================================================= */
+
+        backdrop.addEventListener(
+            "click",
+            function () {
+
+                closeAssistant();
+
+            }
+        );
+
+
+        /* =================================================
+           SCROLL
+        ================================================= */
+
+        function scrollMessages() {
+
+            messages.scrollTop =
+                messages.scrollHeight;
+        }
+
+
+        /* =================================================
+           USER MESSAGE
+        ================================================= */
+
+        function addUserMessage(text) {
+
+            const wrapper =
+                document.createElement("div");
+
+            wrapper.className =
+                "ai-message ai-message-user";
+
+
+            const avatar =
+                document.createElement("div");
+
+            avatar.className =
+                "ai-message-avatar";
+
+            avatar.textContent =
+                "You";
+
+
+            const bubble =
+                document.createElement("div");
+
+            bubble.className =
+                "ai-message-bubble";
+
+            bubble.textContent =
+                text;
+
+
+            wrapper.appendChild(avatar);
+
+            wrapper.appendChild(bubble);
+
+            messages.appendChild(wrapper);
+
+            scrollMessages();
+        }
+
+
+        /* =================================================
+           BOT MESSAGE
+        ================================================= */
+
+        function addBotMessage(text) {
+
+            const wrapper =
+                document.createElement("div");
+
+            wrapper.className =
+                "ai-message ai-message-bot";
+
+
+            const avatar =
+                document.createElement("div");
+
+            avatar.className =
+                "ai-message-avatar";
+
+            avatar.textContent =
+                "AI";
+
+
+            const bubble =
+                document.createElement("div");
+
+            bubble.className =
+                "ai-message-bubble";
+
+            bubble.textContent =
+                text;
+
+
+            wrapper.appendChild(avatar);
+
+            wrapper.appendChild(bubble);
+
+            messages.appendChild(wrapper);
+
+            scrollMessages();
+        }
+
+
+        /* =================================================
+           TYPING
+        ================================================= */
+
+        function showTyping() {
+
+            if (
+                document.getElementById(
+                    "aiTypingIndicator"
+                )
+            ) {
+                return;
+            }
+
+
+            const typing =
+                document.createElement("div");
+
+            typing.className =
+                "ai-typing";
+
+            typing.id =
+                "aiTypingIndicator";
+
+
+            const avatar =
+                document.createElement("div");
+
+            avatar.className =
+                "ai-message-avatar";
+
+            avatar.textContent =
+                "AI";
+
+
+            const dots =
+                document.createElement("div");
+
+            dots.className =
+                "ai-typing-dots";
+
+
+            for (
+                let i = 0;
+                i < 3;
+                i++
+            ) {
+
+                const dot =
+                    document.createElement("span");
+
+                dots.appendChild(dot);
+            }
+
+
+            typing.appendChild(avatar);
+
+            typing.appendChild(dots);
+
+            messages.appendChild(typing);
+
+            scrollMessages();
+        }
+
+
+        /* =================================================
+           REMOVE TYPING
+        ================================================= */
+
+        function removeTyping() {
+
+            const typing =
+                document.getElementById(
+                    "aiTypingIndicator"
+                );
+
+            if (typing) {
+                typing.remove();
+            }
+        }
+
+
+        /* =================================================
+           BUDGETBASICS RESPONSES
+        ================================================= */
+
+        function getAssistantResponse(question) {
+
+            const text =
+                question
+                    .toLowerCase()
+                    .trim();
+
+
+            /* ---------------------------------------------
+               GREETINGS
+            --------------------------------------------- */
+
+            if (
+                text === "hi" ||
+                text === "hello" ||
+                text === "hey" ||
+                text.startsWith("hi ") ||
+                text.startsWith("hello ") ||
+                text.startsWith("hey ")
+            ) {
+
+                return (
+                    "Hi! What would you like to learn about budgeting, saving, spending, or money habits?"
+                );
+            }
+
+
+            /* ---------------------------------------------
+               BUDGET
+            --------------------------------------------- */
+
+            if (
+                text.includes("budget") ||
+                text.includes("make a budget") ||
+                text.includes("create a budget")
+            ) {
+
+                return (
+                    "Start by listing your income and regular expenses. " +
+                    "Then separate needs from wants and decide how much you want to save. " +
+                    "A budget helps give every part of your money a purpose."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               NEEDS VS WANTS
+            --------------------------------------------- */
+
+            if (
+                (
+                    text.includes("need") ||
+                    text.includes("needs")
+                ) &&
+                (
+                    text.includes("want") ||
+                    text.includes("wants")
+                )
+            ) {
+
+                return (
+                    "A need is something important for everyday life, such as food, " +
+                    "transport, or school supplies. A want is something you would like " +
+                    "but can live without."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               SAVING
+            --------------------------------------------- */
+
+            if (
+                text.includes("save") ||
+                text.includes("saving") ||
+                text.includes("savings")
+            ) {
+
+                return (
+                    "Start with a small amount that you can save regularly. " +
+                    "Giving your savings a specific goal can make it easier to stay consistent."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               SPENDING
+            --------------------------------------------- */
+
+            if (
+                text.includes("spend") ||
+                text.includes("spending") ||
+                text.includes("shopping") ||
+                text.includes("buy")
+            ) {
+
+                return (
+                    "Before buying something, pause and ask whether you need it, " +
+                    "whether it fits your budget, and whether you still want it after waiting a little."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               EXPENSES
+            --------------------------------------------- */
+
+            if (
+                text.includes("expense") ||
+                text.includes("expenses")
+            ) {
+
+                return (
+                    "Small expenses can add up quickly. Tracking everyday purchases " +
+                    "can help you understand where your money is going."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               SUBSCRIPTIONS
+            --------------------------------------------- */
+
+            if (
+                text.includes("subscription") ||
+                text.includes("subscriptions")
+            ) {
+
+                return (
+                    "Review subscriptions regularly. If you are paying for something " +
+                    "you rarely use, check whether it still belongs in your budget."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               LATE PAYMENTS
+            --------------------------------------------- */
+
+            if (
+                text.includes("late payment") ||
+                text.includes("late payments") ||
+                text.includes("bill")
+            ) {
+
+                return (
+                    "Keeping track of payment dates can help you avoid late payments. " +
+                    "Important due dates can be added to your budget or calendar."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               MONEY MISTAKES
+            --------------------------------------------- */
+
+            if (
+                text.includes("money mistake") ||
+                text.includes("money mistakes") ||
+                text.includes("mistake")
+            ) {
+
+                return (
+                    "Common money mistakes include impulse buying, ignoring small expenses, " +
+                    "late payments, unused subscriptions, and spending without a plan."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               CALCULATORS
+            --------------------------------------------- */
+
+            if (
+                text.includes("calculator") ||
+                text.includes("calculate")
+            ) {
+
+                return (
+                    "BudgetBasics has calculators for budgeting, savings, and needs versus wants. " +
+                    "You can use the Calculators page to work through your numbers."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               GENERAL MONEY
+            --------------------------------------------- */
+
+            if (
+                text.includes("money") ||
+                text.includes("finance") ||
+                text.includes("financial")
+            ) {
+
+                return (
+                    "I can help you understand budgeting, saving, spending, needs versus wants, " +
+                    "expenses, subscriptions, and common money habits."
+                );
+            }
+
+
+            /* ---------------------------------------------
+               DEFAULT
+            --------------------------------------------- */
+
+            return (
+                "I can help with budgeting, saving, spending, needs versus wants, " +
+                "expenses, subscriptions, money mistakes, and everyday money questions."
+            );
+        }
+
+
+        /* =================================================
+           SEND MESSAGE
+        ================================================= */
+
+        function sendMessage(text) {
+
+            const cleanText =
+                text.trim();
+
+
+            if (!cleanText) {
+                return;
+            }
+
+
+            addUserMessage(
+                cleanText
+            );
+
+
+            input.value = "";
+
+
+            if (quickStart) {
+
+                quickStart.style.display =
+                    "none";
+            }
+
+
+            showTyping();
+
+
+            setTimeout(function () {
+
+                removeTyping();
+
+
+                const response =
+                    getAssistantResponse(
+                        cleanText
+                    );
+
+
+                addBotMessage(
+                    response
+                );
+
+            }, 700);
+        }
+
+
+        /* =================================================
+           FORM SUBMIT
+        ================================================= */
+
+        form.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+                sendMessage(
+                    input.value
+                );
+
+            }
+        );
+
+
+        /* =================================================
+           QUICK QUESTIONS
+        ================================================= */
+
+        const quickButtons =
+            document.querySelectorAll(
+                ".ai-quick-button"
+            );
+
+
+        quickButtons.forEach(function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const question =
+                        button.getAttribute(
+                            "data-question"
+                        );
+
+                    if (question) {
+
+                        sendMessage(
+                            question
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+        /* =================================================
+           ESCAPE KEY
+        ================================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Escape" &&
+                    panel.classList.contains("active")
+                ) {
+
+                    closeAssistant();
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       INITIALIZE
+    ===================================================== */
+
+    if (
+        document.readyState === "loading"
+    ) {
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            initBudgetBasicsAI
+        );
+
+    } else {
+
+        initBudgetBasicsAI();
+
+    }
+
+})();
+</script>
+
+</body>
+
+</html>

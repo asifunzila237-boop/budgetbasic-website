@@ -1,0 +1,2460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BudgetBasics</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link
+        rel="icon"
+        type="image/ico"
+        sizes="32x32"
+        href="images/favicon.ico"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="#">
+
+                <img
+                    class="desktop-logo"
+                    src="images/ChatGPT Image Sep 23, 2026, 07_37_25 PM.png"
+                    alt="BudgetBasics"
+                >
+
+            </a>
+
+
+            <a href="#">
+
+                <img
+                    class="mobile-logo"
+                    src="images/favicon.ico"
+                    alt="B!"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="learn.html">Learn</a>
+            </li>
+
+            <li>
+                <a href="calculators.html">Calculators</a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">Mistakes</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+                <a href="signup.html" class="btn-cta">
+                    Sign Up
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- MOBILE HAMBURGER -->
+
+        <div class="menu-toggle" id="mobileMenu">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- SIDEBAR OVERLAY -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- SIDEBAR -->
+
+    <div
+        class="sidebar-menu"
+        id="sidebarMenu"
+    >
+
+        <div class="sidebar-header">
+
+            <p>QUICK LINKS</p>
+
+            <span
+                class="close-btn"
+                id="closeBtn"
+            >
+                &times;
+            </span>
+
+        </div>
+
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="index.html">
+                    <span>Home</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="learn.html">
+                    <span>Learn Budgeting</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="calculators.html">
+                    <span>Calculators</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="mistakes.html">
+                    <span>Mistakes</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <span>Contact Us</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signup.html">
+                    <span>Sign Up</span>
+                    <span class="arrow">&rsaquo;</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="sidebar-footer">
+
+            <div class="social-icons">
+
+                <!-- FACEBOOK -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    target="_blank"
+                    style="margin-top: 2px;"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.204-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- DISCORD -->
+
+                <a href="#" target="_blank">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="currentColor"
+                    >
+
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="slogan">
+                <span>Build Better Money Habits</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1 style="line-height: 1.10;">
+
+            Real-World<br>
+
+            Financial Literacy
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Learn real-world money skills and practical financial knowledge
+            with BudgetBasics.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#learn"
+                class="hero-btn"
+                style="border-radius: 100px;"
+            >
+                Start Learning
+            </a>
+
+        </div>
+
+
+        <a
+            href="#learn"
+            style="
+                text-decoration: none;
+                letter-spacing: 2px;
+                padding: 5px;
+            "
+            class="hero-link"
+        >
+            Build Better Money Habits
+        </a>
+
+
+        <div class="hero-bottom-text">
+
+            <p>
+                Ready to take control of your money?
+            </p>
+
+            <span>
+                Learn budgeting, build saving habits, avoid common money mistakes,
+                and make smarter spending decisions.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     VIDEO SECTION
+========================================================= -->
+
+<section class="video-section">
+
+    <div class="video-container">
+
+        <video
+            class="budget-video"
+            id="budgetVideo"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+
+            <source
+                src="videos/BudgetBasics_logo_appearing_on_t…_20260923221351.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+
+        <button
+            class="video-toggle"
+            id="videoToggle"
+            type="button"
+            aria-label="Pause video"
+        >
+
+            <span class="pause-icon">
+                I I
+            </span>
+
+            <span class="play-icon">
+                ▶
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOUR PRINCIPLES
+========================================================= -->
+
+<section
+    class="financial-literacy"
+    id="learn"
+>
+
+    <h2>
+        Build Better Money Habits
+    </h2>
+
+
+    <p class="literacy-intro">
+
+        Learn how to manage your money with simple budgeting lessons,
+        practical examples, and interactive tools designed for students
+        and beginners.
+
+    </p>
+
+
+    <div class="literacy-grid">
+
+
+        <!-- PRINCIPLE 01 -->
+
+        <div class="literacy-card">
+
+            <div class="literacy-line"></div>
+
+            <span class="literacy-label">
+                Learn the basics
+            </span>
+
+            <h3>
+                Budgeting Basics
+            </h3>
+
+            <p>
+                Understand income, expenses, needs, wants, and savings
+                through examples.
+            </p>
+
+        </div>
+
+
+        <!-- PRINCIPLE 02 -->
+
+        <div class="literacy-card">
+
+            <div class="literacy-line"></div>
+
+            <span class="literacy-label">
+                Spend smarter
+            </span>
+
+            <h3>
+                Needs vs. Wants
+            </h3>
+
+            <p>
+                Learn how to identify essential spending and separate
+                it from bad purchases.
+            </p>
+
+        </div>
+
+
+        <!-- PRINCIPLE 03 -->
+
+        <div class="literacy-card">
+
+            <div class="literacy-line"></div>
+
+            <span class="literacy-label">
+                Plan ahead
+            </span>
+
+            <h3>
+                Savings Goals
+            </h3>
+
+            <p>
+                Set simple savings goals, estimate the needed time for them.
+            </p>
+
+        </div>
+
+
+        <!-- PRINCIPLE 04 -->
+
+        <div class="literacy-card">
+
+            <div class="literacy-line"></div>
+
+            <span class="literacy-label">
+                Avoid overspending
+            </span>
+
+            <h3>
+                Money Mistakes
+            </h3>
+
+            <p>
+                Recognize common problems such as impulse buying &
+                small bad expenses.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT US
+========================================================= -->
+
+<section
+    class="contact-section"
+    id="contact"
+>
+
+    <div class="contact-content">
+
+        <h2 style="line-height: 1.25;">
+
+            Questions?<br>
+
+            Let's Talk
+
+        </h2>
+
+
+        <p>
+
+            Learn practical budgeting, saving, and money-management skills
+            designed to help you make smarter financial decisions.
+
+        </p>
+
+
+        <a
+            href="#contact"
+            class="contact-button"
+        >
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRINCIPLE 01
+     BUDGETING BASICS
+========================================================= -->
+
+<section class="budgeting-basics-section">
+
+    <div class="budgeting-basics-container">
+
+
+        <!-- LEFT IMAGE -->
+
+        <div class="budgeting-basics-image">
+
+            <img
+                src="images/ChatGPT Image Sep 24, 2026, 03_21_43 AM.png"
+                alt="Budgeting Basics illustration"
+            >
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="budgeting-basics-content">
+
+
+
+            <h2>
+                Budgeting Basics
+            </h2>
+
+
+            <p class="budgeting-intro">
+
+                Understand how money works and build a strong foundation
+                for better financial decisions.
+
+            </p>
+
+            <div class="budgeting-points">
+
+
+                <!-- POINT 01 -->
+
+                <div class="budgeting-point">
+
+                    <span class="budgeting-icon">
+                        💰
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Understand Income
+                        </h3>
+
+                        <p>
+                            Learn where your money comes from and how much
+                            you actually have available to spend.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 02 -->
+
+                <div class="budgeting-point">
+
+                    <span class="budgeting-icon">
+                        🧾
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Track Expenses
+                        </h3>
+
+                        <p>
+                            See where your money goes by understanding
+                            regular and everyday expenses.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 03 -->
+
+                <div class="budgeting-point">
+
+                    <span class="budgeting-icon">
+                        📊
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Creating a Budget
+                        </h3>
+
+                        <p>
+                            Learn how to organize your income and expenses
+                            into a simple, practical spending plan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 04 -->
+
+                <div class="budgeting-point">
+
+                    <span class="budgeting-icon">
+                        🐷
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Make Room for Savings
+                        </h3>
+
+                        <p>
+                            Build simple saving habits by planning your
+                            money before you spend it.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRINCIPLE 02
+     NEEDS VS. WANTS
+========================================================= -->
+
+<section class="needs-wants-section">
+
+
+    <!-- LEFT CONTENT -->
+
+    <div class="needs-wants-content">
+
+
+
+        <h2>
+            Needs vs. Wants
+        </h2>
+
+
+        <p class="needs-wants-intro">
+
+            Learn how to identify essential spending and separate it
+            from purchases that are not necessary.
+
+        </p>
+
+
+        <!-- FOUR POINTS -->
+
+        <div class="needs-wants-points">
+
+
+            <!-- POINT 01 -->
+
+            <div class="needs-wants-point">
+
+                <div class="point-icon">
+                    🏠
+                </div>
+
+
+                <div class="point-text">
+
+                    <h3>
+                        Identify Your Needs
+                    </h3>
+
+                    <p>
+                        Understand which expenses are essential
+                        for everyday life.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- POINT 02 -->
+
+            <div class="needs-wants-point">
+
+                <div class="point-icon">
+                    🛍️
+                </div>
+
+
+                <div class="point-text">
+
+                    <h3>
+                        Recognize Your Wants
+                    </h3>
+
+                    <p>
+                        Separate optional purchases from the
+                        things you actually need.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- POINT 03 -->
+
+            <div class="needs-wants-point">
+
+                <div class="point-icon">
+                    💭
+                </div>
+
+
+                <div class="point-text">
+
+                    <h3>
+                        Think Before Spending
+                    </h3>
+
+                    <p>
+                        Take a moment to decide whether a purchase
+                        is really worth your money.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- POINT 04 -->
+
+            <div class="needs-wants-point">
+
+                <div class="point-icon">
+                    💰
+                </div>
+
+
+                <div class="point-text">
+
+                    <h3>
+                        Spend With Purpose
+                    </h3>
+
+                    <p>
+                        Make smarter choices and leave more money
+                        available for your financial goals.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="needs-wants-image">
+
+        <img
+            src="images/ChatGPT Image Sep 24, 2026, 04_18_14 AM.png"
+            alt="Needs and wants financial education illustration"
+        >
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     BUDGETBASICS — STUDENT TESTIMONIALS
+========================================================= -->
+
+<section class="bb-testimonials">
+
+    <!-- TOP WAVE -->
+    <div class="bb-wave bb-wave-top">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+            <path d="
+                M0 90
+                C180 175 330 175 510 95
+                C690 15 810 15 990 95
+                C1170 175 1290 175 1440 90
+                L1440 0
+                L0 0
+                Z
+            "></path>
+        </svg>
+    </div>
+
+
+    <!-- TEXTURE -->
+    <div class="bb-texture"></div>
+
+
+    <!-- CONTENT -->
+    <div class="bb-testimonials-inner">
+
+        <header class="bb-testimonials-heading">
+
+            <span class="bb-eyebrow">
+                Student Feedback
+            </span>
+
+            <h2>
+                What Students Are Saying
+            </h2>
+
+            <p>
+                See how BudgetBasics makes learning everyday money skills
+                simple, practical, and easier to understand.
+            </p>
+
+        </header>
+
+
+        <!-- TESTIMONIAL CAROUSEL -->
+        <div class="bb-testimonial-carousel">
+
+            <div class="bb-testimonial-card">
+
+                <!-- QUOTE SYMBOL -->
+                <div class="bb-quote-mark">
+                    “
+                </div>
+
+
+                <!-- STUDENT -->
+                <div class="bb-student">
+
+                    <div class="bb-avatar">
+                        A
+                    </div>
+
+                    <div class="bb-student-info">
+
+                        <strong>
+                            Ayesha
+                        </strong>
+
+                        <span>
+                            Web Development Learner
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUOTE -->
+                <blockquote class="bb-quote">
+                    BudgetBasics made tracking expenses and understanding
+                    financial fundamentals so simple and practical.
+                </blockquote>
+
+
+                <!-- STARS -->
+                <div class="bb-stars" aria-label="5 out of 5 stars">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+
+
+                <!-- CAROUSEL CONTROL -->
+                <div class="bb-carousel-footer">
+
+                    <div class="bb-progress">
+                        <div class="bb-progress-bar"></div>
+                    </div>
+
+                    <div class="bb-counter">
+                        <span class="bb-current">01</span>
+                        <span>/</span>
+                        <span>10</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM WAVE -->
+    <div class="bb-wave bb-wave-bottom">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+            <path d="
+                M0 90
+                C180 10 330 10 510 85
+                C690 165 810 165 990 85
+                C1170 10 1290 10 1440 90
+                L1440 180
+                L0 180
+                Z
+            "></path>
+        </svg>
+    </div>
+
+</section>
+
+<!-- =========================================================
+     PRINCIPLE 03
+     PLAN AHEAD — SAVINGS GOALS
+========================================================= -->
+
+<section class="plan-ahead-section">
+
+    <div class="plan-ahead-container">
+
+
+        <!-- LEFT IMAGE -->
+
+        <div class="plan-ahead-image">
+
+            <img
+                src="images/ChatGPT Image Sep 24, 2026, 08_48_49 PM.png"
+                alt="Savings Goals illustration"
+            >
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="plan-ahead-content">
+
+
+            <h2>
+                Savings Goals
+            </h2>
+
+
+            <p class="plan-ahead-intro">
+
+                Set simple savings goals and learn how to estimate
+                the time needed to reach them.
+
+            </p>
+
+
+            <div class="plan-ahead-points">
+
+
+                <!-- POINT 01 -->
+
+                <div class="plan-ahead-point">
+
+                    <span class="plan-ahead-icon">
+                        🎯
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Set a Savings Goal
+                        </h3>
+
+                        <p>
+                            Decide what you want to save for and
+                            set a clear amount you want to reach.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 02 -->
+
+                <div class="plan-ahead-point">
+
+                    <span class="plan-ahead-icon">
+                        📅
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Estimate the Time
+                        </h3>
+
+                        <p>
+                            Work out how long it may take to reach
+                            your goal based on how much you save.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 03 -->
+
+                <div class="plan-ahead-point">
+
+                    <span class="plan-ahead-icon">
+                        💰
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Plan Your Savings
+                        </h3>
+
+                        <p>
+                            Decide how much money you can set aside
+                            regularly to stay on track.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 04 -->
+
+                <div class="plan-ahead-point">
+
+                    <span class="plan-ahead-icon">
+                        🏁
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Reach Your Goal
+                        </h3>
+
+                        <p>
+                            Stay consistent with your savings and
+                            work toward your target step by step.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRINCIPLE 04
+     AVOID OVERSPENDING — MONEY MISTAKES
+========================================================= -->
+
+<section class="money-mistakes-section">
+
+    <div class="money-mistakes-container">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="money-mistakes-content">
+
+            <h2>
+                Money Mistakes
+            </h2>
+
+
+            <p class="money-mistakes-intro">
+
+                Recognize common problems such as impulse buying
+                and small bad expenses.
+
+            </p>
+
+
+            <div class="money-mistakes-points">
+
+
+                <!-- POINT 01 -->
+
+                <div class="money-mistakes-point">
+
+                    <span class="money-mistakes-icon">
+                        🛍️
+                    </span>
+
+                    <div class="money-mistakes-point-text">
+
+                        <h3>
+                            Avoid Impulse Buying
+                        </h3>
+
+                        <p>
+                            Think before making unnecessary purchases
+                            and avoid spending money on the spot.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 02 -->
+
+                <div class="money-mistakes-point">
+
+                    <span class="money-mistakes-icon">
+                        ☕
+                    </span>
+
+                    <div class="money-mistakes-point-text">
+
+                        <h3>
+                            Watch Small Expenses
+                        </h3>
+
+                        <p>
+                            Small daily purchases can quietly add up
+                            and take more money than expected.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 03 -->
+
+                <div class="money-mistakes-point">
+
+                    <span class="money-mistakes-icon">
+                        🧾
+                    </span>
+
+                    <div class="money-mistakes-point-text">
+
+                        <h3>
+                            Notice Spending Habits
+                        </h3>
+
+                        <p>
+                            Pay attention to where your money goes
+                            and recognize patterns that lead to waste.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 04 -->
+
+                <div class="money-mistakes-point">
+
+                    <span class="money-mistakes-icon">
+                        💰
+                    </span>
+
+                    <div class="money-mistakes-point-text">
+
+                        <h3>
+                            Spend With Purpose
+                        </h3>
+
+                        <p>
+                            Make thoughtful spending choices and keep
+                            more of your money available for important goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT IMAGE -->
+
+        <div class="money-mistakes-image">
+
+            <img
+                src="images/ChatGPT Image Sep 24, 2026, 09_07_34 PM.png"
+                alt="Avoid overspending and money mistakes illustration"
+            >
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CALCULATORS PREVIEW
+========================================================= -->
+
+<section class="calculators-section" id="calculators">
+
+    <div class="calculators-container">
+
+        <div class="calculator-bottom-line"></div>
+
+        <div class="calculators-heading">
+
+            <span class="calculators-eyebrow">
+                SMART MONEY TOOLS
+            </span>
+
+            <h2>
+                Make Your Money<br>
+                Easier to Understand
+            </h2>
+
+            <p>
+                Our simple calculators help students understand
+                their money, plan ahead, and make smarter financial
+                decisions without complicated math.
+            </p>
+
+        </div>
+
+
+        <div class="calculator-preview-grid">
+
+            <!-- =================================================
+                 BUDGET
+            ================================================== -->
+
+            <div class="calculator-preview-card">
+
+                <div class="calculator-preview-image">
+                    <img src="images/Mitä veroja pienyrittäjä maksaa_.jpg" alt="Budget Calculator illustration">
+                </div>
+
+                <div class="calculator-preview-content">
+
+                    <span class="calculator-preview-tag">
+                        FOR EVERY STUDENT
+                    </span>
+
+                    <h3>
+                        Budget Calculator
+                    </h3>
+
+                    <p style="max-width: 250px;">
+                        Enter your income and regular expenses to
+                        understand how much money you may have left
+                        each month.
+                    </p>
+
+                    <a href="calculators.html#budget" class="calculator-preview-link">
+                        Learn More <span>&rarr;</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SAVINGS
+            ================================================== -->
+
+            <div class="calculator-preview-card">
+
+                <div class="calculator-preview-image">
+                    <img src="images/How to Protect Your Retirement Income_ Strategies for a Secure Future - Think Different.jpg" alt="Savings Calculator illustration">
+                </div>
+
+                <div class="calculator-preview-content">
+
+                    <span class="calculator-preview-tag">
+                        GOAL PLANNING
+                    </span>
+
+                    <h3>
+                        Savings Calculator
+                    </h3>
+
+                    <p style="max-width: 250px;">
+                        Set a savings goal and see how your monthly
+                        savings can help you understand the time
+                        needed to reach it.
+                    </p>
+
+                    <a href="calculators.html#savings" class="calculator-preview-link">
+                        Learn More <span>&rarr;</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SPENDING
+            ================================================== -->
+
+            <div class="calculator-preview-card">
+
+                <div class="calculator-preview-image">
+                    <img src="images/Janice Chang's art comes from the tapestry of___.jpg" alt="Spending Calculator illustration">
+                </div>
+
+                <div class="calculator-preview-content">
+
+                    <span class="calculator-preview-tag">
+                        DAILY AWARENESS
+                    </span>
+
+                    <h3>
+                        Spending Calculator
+                    </h3>
+
+                    <p style="max-width: 250px;">
+                        See how small daily expenses can add up over
+                        a month and become easier to understand.
+                    </p>
+
+                    <a href="calculators.html#spending" class="calculator-preview-link">
+                        Learn More <span>&rarr;</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="calculators-preview-action">
+
+            <a href="calculators.html" class="calculator-explore-button">
+                Explore Calculators
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MONEY MISTAKES — VIDEO SECTION
+========================================================= -->
+
+<section class="money-mistakes-video-section">
+
+    <div class="money-mistakes-video-wrapper">
+
+        <!-- LEFT: VIDEO -->
+        <div class="money-mistakes-video-box">
+
+            <video
+                class="money-mistakes-video"
+                id="moneyMistakesVideo"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Money Mistakes educational video"
+            >
+                <source
+                    src="videos/financial_literacy_ui.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support the video tag.
+            </video>
+
+
+            <!-- PLAY / PAUSE BUTTON -->
+            <button
+                class="video-toggle money-mistakes-video-toggle"
+                id="moneyMistakesVideoToggle"
+                type="button"
+                aria-label="Pause video"
+            >
+                <span class="pause-icon">I I</span>
+                <span class="play-icon">▶</span>
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT: CONTENT -->
+        <div class="money-mistakes-video-content">
+
+            <h2>
+                Money Mistakes
+            </h2>
+
+            <p class="money-mistakes-video-description">
+                Learn how everyday decisions can affect your money
+                and how small changes can help you manage it better.
+            </p>
+
+
+            <ul class="money-mistakes-video-list">
+
+                <li>
+                    <span class="mistake-arrow">→</span>
+                    <span>Impulse buying</span>
+                </li>
+
+                <li>
+                    <span class="mistake-arrow">→</span>
+                    <span>Small daily expenses</span>
+                </li>
+
+                <li>
+                    <span class="mistake-arrow">→</span>
+                    <span>Late payments</span>
+                </li>
+
+                <li>
+                    <span class="mistake-arrow">→</span>
+                    <span>Unused subscriptions</span>
+                </li>
+
+                <li>
+                    <span class="mistake-arrow">→</span>
+                    <span>Spending without a plan</span>
+                </li>
+
+            </ul>
+
+
+            <a
+                href="mistakes.html"
+                class="money-mistakes-video-btn"
+            >
+                Explore Money Mistakes
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AI ASSISTANT SECTION
+========================================================= -->
+
+<section class="ai-assistant-section" id="ai-assistant">
+
+    <div class="ai-assistant-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="ai-assistant-content">
+
+            <h2>
+                Get Help With<br>
+                Your Money
+            </h2>
+
+            <p>
+                Have a question about budgeting, saving, spending, or
+                everyday money decisions? Ask our AI Assistant for simple
+                explanations, useful guidance, and quick answers to help
+                you better understand your finances.
+            </p>
+
+
+        </div>
+
+
+        <!-- RIGHT IMAGE -->
+        <div class="ai-assistant-image">
+
+            <img
+                src="images/banzai-homepage-spot4.jpg"
+                alt="AI Assistant"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SIGN UP SECTION
+========================================================= -->
+
+<section class="signup-section" id="signup">
+
+    <div class="signup-content">
+
+        <h2>
+            Ready to Build<br>
+            Better Money Habits?
+        </h2>
+
+        <p>
+            Create your free BudgetBasics account and start learning
+            practical money skills, exploring helpful tools, and building
+            better financial habits.
+        </p>
+
+        <a href="signup.html" class="signup-button">
+            Sign Up
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRIVATE & SECURE SECTION
+========================================================= -->
+
+<section class="private-secure-section" id="private-secure">
+
+    <div class="private-secure-container">
+
+        <!-- LEFT: IMAGE -->
+        <div class="private-secure-image">
+
+            <img
+                src="images/banzai-homepage-spot3.jpg"
+                alt=""
+            >
+
+        </div>
+
+
+        <!-- RIGHT: CONTENT -->
+        <div class="private-secure-content">
+
+            <h2>
+                Private & Secure
+            </h2>
+
+            <p>
+                BudgetBasics is designed with student privacy in mind.
+                Your personal information is handled carefully so you
+                can learn and manage your money with confidence.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FREQUENTLY ASKED QUESTIONS
+========================================================= -->
+
+<section class="faq-section" id="faq">
+
+    <div class="faq-container">
+
+        <h2>
+            Frequently Asked
+            Questions
+        </h2>
+
+
+        <div class="faq-list">
+
+            <!-- FAQ 01 -->
+            <details class="faq-item" open>
+
+                <summary>
+                    <span>What is BudgetBasics?</span>
+                    <span class="faq-arrow"></span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        BudgetBasics is a student-friendly financial literacy
+                        platform that helps you learn budgeting, saving,
+                        spending, and everyday money-management skills.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 02 -->
+            <details class="faq-item">
+
+                <summary>
+                    <span>Is BudgetBasics free to use?</span>
+                    <span class="faq-arrow"></span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. BudgetBasics is designed to provide students
+                        with free access to its financial learning content
+                        and helpful money-management tools.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 03 -->
+            <details class="faq-item">
+
+                <summary>
+                    <span>What can I learn on BudgetBasics?</span>
+                    <span class="faq-arrow"></span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        You can learn about budgeting basics, needs and wants,
+                        savings goals, common money mistakes, and practical
+                        ways to manage your everyday spending.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 04 -->
+            <details class="faq-item">
+
+                <summary>
+                    <span>Does BudgetBasics have money calculators?</span>
+                    <span class="faq-arrow"></span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. BudgetBasics includes simple calculators that
+                        can help you understand your budget, savings goals,
+                        and everyday spending.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 05 -->
+            <details class="faq-item">
+
+                <summary>
+                    <span>Can the AI Assistant help me?</span>
+                    <span class="faq-arrow"></span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        The AI Assistant can help explain financial concepts,
+                        answer money-related questions, and provide simple
+                        guidance based on the information you share.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 06 -->
+            <details class="faq-item">
+
+                <summary>
+                    <span>Who is BudgetBasics made for?</span>
+                    <span class="faq-arrow"></span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        BudgetBasics is primarily designed for students and
+                        beginners who want to understand real-world money
+                        skills in a simple and practical way.
+                    </p>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AWARDS / RECOGNITION / PLEDGES
+========================================================= -->
+
+<!-- =========================================================
+     AWARDS / RECOGNITION / PLEDGES
+========================================================= -->
+
+<section class="awards-section" id="awards">
+
+    <div class="awards-container">
+
+        <h2>
+            Awards, Recognition, and Pledges
+        </h2>
+
+
+        <!-- AWARD IMAGES -->
+        <div class="awards-grid">
+
+            <div class="award-image-slot award-01">
+                <img
+                    src="images/bz-home-nation-partner-emblem.jpg"
+                    alt="Award recognition"
+                >
+            </div>
+
+            <div class="award-image-slot award-02">
+                <img
+                    src="images/bz-home-project-unicorn.jpg"
+                    alt="Project pledge recognition"
+                >
+            </div>
+
+            <div class="award-image-slot award-03">
+                <img
+                    src="images/bz-home-eifle-electronic-game.jpg"
+                    alt="Financial literacy award"
+                >
+            </div>
+
+            <div class="award-image-slot award-04">
+                <img
+                    src="images/edtech-badge.png"
+                    alt="Education award"
+                >
+            </div>
+
+            <div class="award-image-slot award-05">
+                <img
+                    src="images/bz-home-tech-and-learning-2024-award.jpg"
+                    alt="Education recognition"
+                >
+            </div>
+
+            <div class="award-image-slot award-06">
+                <img
+                    src="images/cooltool.png"
+                    alt="EdTech recognition"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="final-signup-section">
+
+    <div class="final-signup-container">
+
+        <h2>
+            Get started with BudgetBasics today.
+        </h2>
+
+        <a href="signup.html" class="final-signup-button">
+            Try it for free
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <!-- CURVE -->
+
+    <svg
+        class="footer-curve"
+        viewBox="0 0 1000 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+    >
+
+        <path
+            d="M0 0 H1000 V145 Q500 0 0 145 Z"
+            fill="#ffffff"
+        ></path>
+
+    </svg>
+
+
+
+    <div class="footer-inner">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <div class="footer-logo">
+
+                <img
+                    src="images/ChatGPT Image Sep 23, 2026, 08_03_00 PM.png"
+                    alt="B!"
+                >
+
+            </div>
+
+
+            <p>
+                © 2026 BudgetBasics.<br>
+                All rights reserved.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LEARN -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                LEARN
+            </h4>
+
+
+            <a href="learn.html#budgeting">
+                Budgeting Basics
+            </a>
+
+
+            <a href="learn.html#needs-wants">
+                Needs vs. Wants
+            </a>
+
+
+            <a href="learn.html#savings">
+                Savings Goals
+            </a>
+
+
+            <a href="learn.html#mistakes">
+                Money Mistakes
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                TOOLS
+            </h4>
+
+
+            <a href="calculators.html#budget-calculator">
+                Budget Calculator
+            </a>
+
+
+            <a href="calculators.html#savings-calculator">
+                Savings Calculator
+            </a>
+
+
+            <a href="calculators.html#needs-calculator">
+                Needs vs. Wants
+            </a>
+
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                COMPANY
+            </h4>
+
+
+            <a href="https://www.instagram.com">
+                Instagram
+            </a>
+
+            <a href="https://www.discord.com">
+                Discord
+            </a>
+
+            <a href="https://www.linkedin.com">
+                LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com">
+                Facebook
+            </a>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- =========================================================
+     BUDGETBASICS AI ASSISTANT
+========================================================= -->
+
+<div class="ai-assistant-widget">
+
+
+    <!-- =====================================================
+         BACKDROP
+    ====================================================== -->
+
+    <div
+        class="ai-assistant-backdrop"
+        id="aiAssistantBackdrop"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         FLOATING AI BUTTON
+    ====================================================== -->
+
+    <button
+        class="ai-assistant-launcher"
+        id="aiAssistantLauncher"
+        type="button"
+        aria-label="Open BudgetBasics AI Assistant"
+        aria-expanded="false"
+    >
+
+        <!-- BOT BADGE -->
+
+        <span class="ai-launcher-badge">
+
+            <!-- ROBOT ICON -->
+
+            <svg
+                class="ai-launcher-icon"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+
+                <!-- Antenna -->
+
+                <path
+                    d="M12 5V3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+                <circle
+                    cx="12"
+                    cy="2.5"
+                    r="1"
+                    fill="currentColor"
+                />
+
+
+                <!-- Robot Head -->
+
+                <rect
+                    x="4"
+                    y="6"
+                    width="16"
+                    height="13"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+
+
+                <!-- Eyes -->
+
+                <circle
+                    cx="9"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+                <circle
+                    cx="15"
+                    cy="11.5"
+                    r="1.15"
+                    fill="currentColor"
+                />
+
+
+                <!-- Mouth -->
+
+                <path
+                    d="M9 15H15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+
+
+                <!-- Side Details -->
+
+                <path
+                    d="M4 11H2.8"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M21.2 11H20"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+
+            <!-- ONLINE DOT -->
+
+            <span
+                class="ai-status-dot"
+                aria-hidden="true"
+            ></span>
+
+        </span>
+
+
+        <!-- CLOSE ICON -->
+
+        <span
+            class="ai-launcher-close"
+            aria-hidden="true"
+        >
+            ×
+        </span>
+
+
+        <!-- HOVER LABEL -->
+
+        <span
+            class="ai-launcher-label"
+            aria-hidden="true"
+        >
+            BudgetBasics AI
+        </span>
+
+    </button>
+
+
+    <!-- =====================================================
+         CHAT PANEL
+    ====================================================== -->
+
+    <section
+        class="ai-assistant-panel"
+        id="aiAssistantPanel"
+        aria-hidden="true"
+    >
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="ai-assistant-header">
+
+            <div class="ai-assistant-title-wrap">
+
+
+                <!-- BOT AVATAR -->
+
+                <div class="ai-assistant-avatar">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+
+                        <!-- Antenna -->
+
+                        <path
+                            d="M12 5V3"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="2.5"
+                            r="1"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Robot Head -->
+
+                        <rect
+                            x="4"
+                            y="6"
+                            width="16"
+                            height="13"
+                            rx="4"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        />
+
+
+                        <!-- Eyes -->
+
+                        <circle
+                            cx="9"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+                        <circle
+                            cx="15"
+                            cy="11.5"
+                            r="1.15"
+                            fill="currentColor"
+                        />
+
+
+                        <!-- Mouth -->
+
+                        <path
+                            d="M9 15H15"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                        />
+
+
+                        <!-- Side Details -->
+
+                        <path
+                            d="M4 11H2.8"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M21.2 11H20"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <div>
+
+                    <h3>
+                        BudgetBasics AI
+                    </h3>
+
+                    <span>
+                        Money Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="ai-assistant-close"
+                id="aiAssistantClose"
+                type="button"
+                aria-label="Close BudgetBasics AI Assistant"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <div
+            class="ai-assistant-messages"
+            id="aiAssistantMessages"
+            aria-live="polite"
+        >
+
+
+            <!-- INITIAL MESSAGE -->
+
+            <div
+                class="ai-message ai-message-bot"
+            >
+
+                <div
+                    class="ai-message-avatar"
+                >
+                    AI
+                </div>
+
+                <div
+                    class="ai-message-bubble"
+                >
+                    Hi! I’m the BudgetBasics AI Assistant. Ask me about budgeting, saving, spending, or everyday money decisions.
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUICK QUESTIONS
+            ================================================== -->
+
+            <div
+                class="ai-quick-start"
+                id="aiQuickStart"
+            >
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How do I make a budget?"
+                >
+                    How do I make a budget?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="What is the difference between needs and wants?"
+                >
+                    Needs vs. wants?
+                </button>
+
+
+                <button
+                    type="button"
+                    class="ai-quick-button"
+                    data-question="How can I start saving money?"
+                >
+                    How can I save money?
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INPUT AREA
+        ================================================== -->
+
+        <form
+            class="ai-assistant-input-area"
+            id="aiAssistantForm"
+        >
+
+            <input
+                type="text"
+                id="aiAssistantInput"
+                class="ai-assistant-input"
+                placeholder="Ask a money question..."
+                autocomplete="off"
+                aria-label="Ask a money question"
+            />
+
+
+            <!-- SEND -->
+
+            <button
+                type="submit"
+                class="ai-assistant-send"
+                aria-label="Send message"
+            >
+
+                <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M21 3L10.5 13.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M21 3L14.3 21L10.5 13.5L3 9.7L21 3Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+
+
+<script src="index.js"></script>
+
+
+</body>
+
+</html>

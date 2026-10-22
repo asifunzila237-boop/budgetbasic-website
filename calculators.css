@@ -1,0 +1,5133 @@
+/* =========================================================
+   BUDGETBASICS CALCULATORS
+   COMPLETE CSS
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --yellow: #ffc400;
+    --blue: #0066ff;
+    --black: #111111;
+    --white: #ffffff;
+    --gray: #eeeeee;
+
+    --footer: #1b1623;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--black);
+
+    background: var(--white);
+
+    overflow-x: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* =========================================================
+   NAVBAR CONTAINER
+========================================================= */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar {
+
+    max-width:
+        1200px;
+
+    margin:
+        0 auto;
+
+    padding:
+        10px
+        20px;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+}
+
+
+.desktop-logo {
+
+    width:
+        230px;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+}
+
+
+.mobile-logo {
+
+    display: none;
+
+    width: 100px;
+
+    height: 100px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 600;
+
+    font-size: 20px;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+color: #000000;
+
+    opacity: 0.7;;
+}
+
+
+.nav-links a.active {
+
+    color: var(--blue);
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.btn-cta {
+
+    background-color: #0066ff;
+
+    color: #fff !important;
+
+    padding:
+        10px 22px;
+
+    border-radius: 30px;
+
+    transition:
+        background 0.3s ease;
+}
+
+
+.btn-cta:hover {
+
+    background-color:
+        #0052cc;
+}
+
+
+/* =========================================================
+   MOBILE HAMBURGER
+========================================================= */
+
+.menu-toggle {
+
+    display: none;
+
+    cursor: pointer;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    border: 0;
+
+    background: transparent;
+
+    padding: 5px;
+}
+
+
+.menu-toggle .bar {
+
+    width: 25px;
+
+    height: 3px;
+
+    background-color: #333;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================================
+   SIDEBAR OVERLAY
+========================================================= */
+
+.sidebar-overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        rgba(0, 0, 0, 0.4);
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+
+    z-index: 1001;
+}
+
+
+.sidebar-overlay.active {
+
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar-menu {
+
+    position: fixed;
+
+    top: 0;
+
+    right: -320px;
+
+    width: 300px;
+
+    height: 100%;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        -5px 0 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition:
+        right 0.35s cubic-bezier(
+            0.77,
+            0,
+            0.175,
+            1
+        );
+
+    z-index: 1002;
+
+    padding:
+        25px 20px;
+}
+
+
+.sidebar-menu.active {
+
+    right: 0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER
+========================================================= */
+
+.sidebar-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+
+
+.sidebar-header p {
+
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    font-weight: 100;
+
+    color: #333;
+}
+
+
+.close-btn {
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    color: #333;
+
+    line-height: 1;
+
+    transition:
+        color 0.2s;
+}
+
+
+/* =========================================================
+   SIDEBAR LINKS
+========================================================= */
+
+.sidebar-links {
+
+    list-style: none;
+
+    margin-top: 20px;
+
+    flex-grow: 1;
+
+    overflow-y: auto;
+}
+
+
+.sidebar-links a {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding:
+        16px 5px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    transition:
+        color 0.2s,
+        padding-left 0.2s;
+}
+
+
+.sidebar-links a .arrow {
+
+    font-size: 20px;
+
+    color: #888;
+
+    font-weight: 300;
+}
+
+
+.sidebar-links a:hover {
+
+    padding-left: 8px;
+
+    color: var(--blue);
+}
+
+
+/* =========================================================
+   SIDEBAR FOOTER
+========================================================= */
+
+.sidebar-footer {
+
+    padding-top: 15px;
+
+    text-align: center;
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.social-icons a {
+
+    font-size: 18px;
+
+    text-decoration: none;
+
+    color:
+        rgba(0, 0, 0, 0.904);
+}
+
+
+.slogan {
+
+    padding-top: 15px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #525151;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE NAVBAR
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+
+        display: block;
+
+        width: 42px;
+
+        height: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   HERO
+   MATCHES THE MONEY MISTAKES PAGE STRUCTURE
+========================================================= */
+
+.calculator-hero {
+
+    width: 100%;
+
+    padding:
+        175px 20px 150px;
+
+    background:
+        var(--white);
+
+    text-align:
+        center;
+}
+
+.calculator-hero-inner {
+
+    width:
+        min(
+            1200px,
+            calc(100% - 40px)
+        );
+
+    margin:
+        0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    height: 63vh;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.hero-content h1 {
+
+    margin: 0 auto;
+
+    max-width: 900px;
+
+    color:
+        #111111;
+
+    font-size:
+        clamp(
+            56px,
+            7vw,
+            88px
+        );
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    letter-spacing: -4px;
+}
+
+.hero-title-black {
+    color: #111111;
+}
+
+.hero-content p {
+
+    max-width: 500px;
+
+    margin:
+        30px auto 34px;
+
+    color:
+        #5d5d5d;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+}
+
+.hero-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        12px;
+
+    padding:
+        14px
+        22px;
+
+    border-radius:
+        999px;
+
+    background:
+        #ffc400;
+
+    color:
+        #ffffff;
+
+    text-decoration:
+        none;
+
+    font-size:
+        15px;
+
+    font-weight:
+        700;
+
+    transition:
+        transform
+        0.2s
+        ease,
+        background
+        0.2s
+        ease;
+}
+
+.hero-button span {
+    
+    font-size:
+        19px;
+}
+
+.hero-button:hover {
+
+   transform:
+        translateY(
+            -2px
+        );
+
+}
+
+
+/* =========================================================
+   QUICK ACCESS
+   BLACK NAVBAR
+   NO BACKGROUND SHAPE
+   NO CARD
+   NO SHADOW
+========================================================= */
+
+.calculator-tools {
+
+    width: 100%;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    padding:
+        0 20px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   QUICK ACCESS INNER
+========================================================= */
+
+.calculator-tools-inner {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    min-height: 82px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr
+        1fr
+        1fr
+        1.2fr;
+
+    align-items: stretch;
+
+    background: transparent;
+
+    border: 0;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   QUICK ACCESS TITLE
+========================================================= */
+
+.tools-title {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 20px;
+
+    color:
+        var(--yellow);
+
+    background: transparent;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   QUICK ACCESS LINKS
+========================================================= */
+
+.calculator-tools-inner a {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding:
+        0 22px;
+
+    color:
+        var(--white);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border-left:
+        1px solid rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    background: transparent;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+
+/* =========================================================
+   QUICK ACCESS NUMBERS
+========================================================= */
+
+.calculator-tools-inner a span {
+
+    width: 27px;
+
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        transparent;
+
+    color:
+        #8e8e8e;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* =========================================================
+   QUICK ACCESS HOVER
+========================================================= */
+
+.calculator-tools-inner a:hover {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.06
+        );
+
+    color:
+        var(--yellow);
+
+    padding-left: 27px;
+}
+
+
+.calculator-tools-inner a:hover span {
+
+    background:
+        var(--yellow);
+
+    color:
+        var(--black);
+}
+
+
+/* =========================================================
+   REMOVE OLD LINK ACCENT SHAPES
+========================================================= */
+
+.calculator-tools-inner a::after {
+
+    display: none !important;
+
+    content: none !important;
+}
+
+
+/* =========================================================
+   CALCULATOR SECTIONS
+========================================================= */
+
+.calculator-section {
+
+    width: 100%;
+
+    padding:
+        100px 20px;
+
+    overflow: hidden;
+
+    background:
+        var(--white);
+}
+
+
+/* =========================================================
+   CALCULATOR CARD
+========================================================= */
+
+.calculator-card {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    min-height: 500px;
+
+    margin: auto;
+
+    background:
+        var(--white);
+
+    border:
+        2px solid var(--black);
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns:
+        75px minmax(0, 1fr) minmax(0, 1fr);
+
+    box-shadow:
+        10px 10px 0 var(--black);
+}
+
+
+/* =========================================================
+   NUMBER COLUMN
+========================================================= */
+
+.card-number {
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    min-width: 0;
+}
+
+
+.blue-number {
+
+    background:
+        var(--blue);
+}
+
+
+.yellow-number {
+
+    background:
+        var(--yellow);
+
+    color:
+        var(--black);
+}
+
+
+/* =========================================================
+   CARD INFORMATION
+========================================================= */
+
+.card-information {
+
+    padding:
+        52px 44px;
+
+    min-width: 0;
+
+    border-right:
+        2px solid var(--black);
+}
+
+
+.card-label {
+
+    display: inline-flex;
+
+    padding:
+        7px 11px;
+
+    margin-bottom: 20px;
+
+    border-radius: 999px;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.3px;
+}
+
+
+.blue-label {
+
+    background:
+        var(--blue);
+}
+
+
+.card-information h2 {
+
+    font-size:
+        clamp(
+            36px,
+            4vw,
+            56px
+        );
+
+    line-height: 0.98;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+
+    margin-bottom: 22px;
+}
+
+
+.card-information > p {
+
+    max-width: 420px;
+
+    margin-bottom: 32px;
+
+    color:
+        #5d5d5d;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   FORMULA
+========================================================= */
+
+.formula-box {
+
+    width: 100%;
+
+    padding: 18px;
+
+    background:
+        #f2f2f2;
+
+    border:
+        2px solid var(--black);
+
+    border-radius: 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.formula-box div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    min-width: 0;
+}
+
+
+.formula-box strong {
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+
+.formula-box small {
+
+    color:
+        #777777;
+
+    font-size: 9px;
+
+    line-height: 1.3;
+}
+
+
+.formula-box b {
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   SAVINGS VISUAL
+========================================================= */
+
+.goal-box {
+
+    min-height: 160px;
+
+    padding: 20px;
+
+    background:
+        var(--black);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.goal-circle {
+
+    width: 120px;
+
+    height: 120px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            var(--yellow)
+            0deg 250deg,
+            #3a3a3a
+            250deg 360deg
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.goal-circle div {
+
+    width: 82px;
+
+    height: 82px;
+
+    border-radius: 50%;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+
+.goal-lines {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.goal-lines span {
+
+    height: 10px;
+
+    border-radius: 999px;
+
+    background:
+        #3b3b3b;
+}
+
+
+.goal-lines span:nth-child(1) {
+
+    width: 100%;
+}
+
+
+.goal-lines span:nth-child(2) {
+
+    width: 78%;
+
+    background:
+        var(--yellow);
+}
+
+
+.goal-lines span:nth-child(3) {
+
+    width: 56%;
+}
+
+
+/* =========================================================
+   SPENDING VISUAL
+========================================================= */
+
+.spending-box {
+
+    width: 100%;
+
+    padding-top: 22px;
+}
+
+
+.spending-bar {
+
+    width: 100%;
+
+    height: 34px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border:
+        2px solid var(--black);
+
+    border-radius: 999px;
+}
+
+
+.needs-bar {
+
+    width: 58%;
+
+    background:
+        var(--blue);
+}
+
+
+.wants-bar {
+
+    width: 42%;
+
+    background:
+        var(--yellow);
+}
+
+
+.spending-labels {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-top: 14px;
+}
+
+
+.spending-labels div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.spending-labels strong {
+
+    font-size: 10px;
+
+    font-weight: 900;
+}
+
+
+.spending-labels small {
+
+    color:
+        #777777;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   CALCULATOR BOX
+========================================================= */
+
+.calculator-box {
+
+    padding:
+        50px 40px;
+
+    background:
+        #f8f8f8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-width: 0;
+}
+
+
+.calculator-box-title {
+
+    margin-bottom: 23px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.input-row {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    min-width: 0;
+}
+
+
+.input-group label {
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.input-field {
+
+    min-height: 52px;
+
+    padding:
+        0 13px;
+
+    background:
+        var(--white);
+
+    border:
+        2px solid var(--black);
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    min-width: 0;
+}
+
+
+.input-field > span {
+
+    flex-shrink: 0;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    margin-right: 7px;
+}
+
+
+.input-field input {
+
+    width: 100%;
+
+    min-width: 0;
+
+    border: 0;
+
+    outline: 0;
+
+    background:
+        transparent;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    color:
+        var(--black);
+}
+
+
+.input-field input::placeholder {
+
+    color:
+        #aaaaaa;
+}
+
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+
+    appearance: none;
+
+    margin: 0;
+}
+
+
+.input-field input[type="number"] {
+
+    appearance: textfield;
+}
+
+
+.input-field:focus-within {
+
+    box-shadow:
+        4px 4px 0 var(--yellow);
+}
+
+
+.blue-section
+.input-field:focus-within {
+
+    box-shadow:
+        4px 4px 0 var(--blue);
+}
+
+
+.gray-section
+.input-field:focus-within {
+
+    box-shadow:
+        4px 4px 0 var(--black);
+}
+
+
+/* =========================================================
+   CALCULATE BUTTON
+========================================================= */
+
+.calculate-btn {
+
+    width: 100%;
+
+    min-height: 53px;
+
+    padding:
+        0 17px;
+
+    border:
+        2px solid var(--black);
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.calculate-btn:hover {
+
+    transform:
+        translate(-2px, -2px);
+
+    box-shadow:
+        5px 5px 0 var(--black);
+}
+
+
+.yellow-btn {
+
+    background:
+        var(--yellow);
+
+    color:
+        var(--black);
+}
+
+
+.blue-btn {
+
+    background:
+        var(--blue);
+
+    color:
+        var(--white);
+}
+
+
+.black-btn {
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+}
+
+
+.calculate-btn span {
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   RESULT
+========================================================= */
+
+.result-box {
+
+    min-height: 82px;
+
+    margin-top: 16px;
+
+    padding:
+        13px 16px;
+
+    border:
+        2px solid var(--black);
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-width: 0;
+}
+
+
+.yellow-result {
+
+    background:
+        #fff3bd;
+}
+
+
+.blue-result {
+
+    background:
+        #dce9ff;
+}
+
+
+.gray-result {
+
+    background:
+        #e5e5e5;
+}
+
+
+.result-box div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    min-width: 0;
+}
+
+
+.result-box small {
+
+    color:
+        #6a6a6a;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.result-box strong {
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    font-weight: 900;
+}
+
+
+.result-symbol {
+
+    width: 43px;
+
+    height: 43px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    font-weight: 900;
+}
+
+
+.blue-result .result-symbol {
+
+    background:
+        var(--blue);
+}
+
+
+.black-result-symbol {
+
+    background:
+        var(--yellow);
+
+    color:
+        var(--black);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   MATCHES THE MONEY MISTAKES PAGE STRUCTURE
+========================================================= */
+
+.final-cta {
+
+    width: 100%;
+
+    padding:
+        135px 20px 150px;
+
+    text-align:
+        center;
+
+    background:
+        #ffffff;
+}
+
+.cta-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin:
+        0 auto;
+}
+
+.cta-content h2 {
+
+    margin: 0;
+
+    color:
+        #111111;
+
+    font-size:
+        clamp(
+            47px,
+            6vw,
+            70px
+        );
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -4px;
+}
+
+.cta-content p {
+
+    max-width: 620px;
+
+    margin:
+        26px auto 0;
+
+    color:
+        #626262;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.cta-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        52px;
+
+    padding:
+        0
+        24px;
+
+    border-radius:
+        999px;
+
+    text-decoration:
+        none;
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+        gap:
+        11px;
+
+    background:
+        #0066ff;
+
+    color:
+        #ffffff;
+}
+
+.cta-button a:hover {
+
+    background:
+        #0052cc;
+
+    transform:
+        translateY(-2px);
+}
+
+.cta-button span {
+    font-size:
+        18px;
+
+}
+
+/* =========================================================
+   CURVED FOOTER
+========================================================= */
+
+.site-footer {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 390px;
+
+    background:
+        var(--footer);
+
+    color:
+        var(--white);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SVG TOP CURVE
+========================================================= */
+
+.footer-curve {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 170px;
+
+    display: block;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FOOTER CONTENT
+========================================================= */
+
+.footer-inner {
+
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding:
+        125px 35px 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.3fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 55px;
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
+
+.footer-brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.footer-logo {
+
+    width: 72px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    margin-bottom: 18px;
+}
+
+
+.footer-logo img {
+
+    width: 62px;
+
+    height: 62px;
+
+    object-fit: contain;
+}
+
+
+.footer-brand p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    font-weight: 600;
+
+    color:
+        var(--white);
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.footer-column h4 {
+
+    margin:
+        0 0 22px;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.footer-column a {
+
+    margin-bottom: 17px;
+
+    color:
+        var(--white);
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    transition:
+        opacity 0.2s ease;
+}
+
+
+.footer-column a:hover {
+
+    opacity: 0.55;
+}
+
+
+/* =========================================================
+   TABLET
+   1100px DOWN
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* NAVBAR */
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+
+        display: block;
+
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    /* =====================================================
+       QUICK ACCESS
+       KEEP BLACK
+    ===================================================== */
+
+    .calculator-tools {
+
+        background:
+            var(--black);
+
+        color:
+            var(--white);
+
+        padding:
+            0 20px;
+    }
+
+
+    .calculator-tools-inner {
+
+        width: 100%;
+
+        max-width: 1200px;
+
+        min-height: 82px;
+
+        margin: auto;
+
+        padding: 0;
+
+        display: grid;
+
+        grid-template-columns:
+            1.1fr
+            1fr
+            1fr
+            1.2fr;
+
+        align-items: stretch;
+
+        background: transparent;
+
+        border: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+
+
+    .tools-title {
+
+        display: flex;
+
+        align-items: center;
+
+        padding: 0 20px;
+
+        color:
+            var(--yellow);
+
+        background: transparent;
+
+        font-size: 10px;
+
+        font-weight: 900;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .calculator-tools-inner a {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 11px;
+
+        padding:
+            0 22px;
+
+        color:
+            var(--white);
+
+        text-decoration: none;
+
+        border-left:
+            1px solid rgba(
+                255,
+                255,
+                255,
+                0.16
+            );
+
+        font-size: 13px;
+
+        font-weight: 700;
+
+        background: transparent;
+
+        transition:
+            background 0.2s ease,
+            color 0.2s ease,
+            padding-left 0.2s ease;
+    }
+
+
+    .calculator-tools-inner a:hover {
+
+        background:
+            rgba(
+                255,
+                255,
+                255,
+                0.06
+            );
+
+        color:
+            var(--yellow);
+
+        padding-left: 27px;
+    }
+
+
+    .calculator-tools-inner a span {
+
+        color:
+            #8e8e8e;
+
+        background:
+            transparent;
+
+        font-size: 10px;
+
+        font-weight: 900;
+    }
+
+
+    /* CALCULATOR CARD */
+
+    .calculator-card {
+
+        grid-template-columns:
+            72px minmax(0, 1fr);
+
+        grid-template-rows:
+            auto auto;
+
+        min-height: 0;
+    }
+
+
+    .card-number {
+
+        grid-column: 1;
+
+        grid-row: 1 / 3;
+
+        min-height: 100%;
+
+        width: 100%;
+    }
+
+
+    .card-information {
+
+        grid-column: 2;
+
+        grid-row: 1;
+
+        width: 100%;
+
+        min-width: 0;
+
+        border-right: 0;
+
+        border-bottom:
+            2px solid var(--black);
+
+        padding:
+            48px 40px;
+    }
+
+
+    .calculator-box {
+
+        grid-column: 2;
+
+        grid-row: 2;
+
+        width: 100%;
+
+        min-width: 0;
+
+        padding:
+            42px 40px;
+    }
+
+
+    .card-information h2 {
+
+        max-width: 700px;
+    }
+
+
+    .card-information > p {
+
+        max-width: 650px;
+    }
+
+
+    .formula-box {
+
+        max-width: 720px;
+    }
+
+
+    .goal-box {
+
+        max-width: 720px;
+    }
+
+
+    .spending-box {
+
+        max-width: 720px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-inner {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:
+            45px 35px;
+
+        padding:
+            120px 28px 40px;
+    }
+
+
+    .footer-brand {
+
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   900px DOWN
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .calculator-section {
+
+        padding:
+            80px 18px;
+    }
+
+
+    .calculator-card {
+
+        grid-template-columns:
+            68px minmax(0, 1fr);
+
+        border-radius:
+            22px;
+
+        box-shadow:
+            8px 8px 0 var(--black);
+    }
+
+
+    .card-information {
+
+        padding:
+            42px 32px;
+    }
+
+
+    .calculator-box {
+
+        padding:
+            38px 32px;
+    }
+
+
+    .card-information h2 {
+
+        font-size:
+            clamp(
+                35px,
+                5vw,
+                48px
+            );
+
+        letter-spacing:
+            -2.5px;
+    }
+
+
+    .card-information > p {
+
+        font-size: 14px;
+    }
+
+
+    .formula-box {
+
+        gap: 8px;
+
+        padding: 15px;
+    }
+
+
+    .goal-box {
+
+        gap: 20px;
+    }
+
+
+    .footer-inner {
+
+        padding:
+            120px 25px 40px;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   700px DOWN
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* HERO */
+
+    .calculator-hero {
+
+        padding:
+            135px 15px 80px;
+    }
+
+    .calculator-hero-inner {
+
+        width:
+            calc(100% - 30px);
+    }
+
+    .hero-content {
+
+        max-width: 650px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 52px;
+
+        line-height: 1.02;
+
+        letter-spacing: -3px;
+    }
+
+    .hero-content p {
+
+        max-width: 520px;
+
+        margin: 25px auto 30px;
+
+        font-size: 16px;
+
+        line-height: 1.65;
+    }
+
+    .hero-button {
+
+        margin: 0 auto;
+    }
+
+
+    /* =====================================================
+       QUICK ACCESS
+       BLACK FULL-WIDTH NAVBAR
+    ===================================================== */
+
+    .calculator-tools {
+
+        padding:
+            0;
+
+        background:
+            var(--black);
+    }
+
+
+    .calculator-tools-inner {
+
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: none;
+
+        border: 0;
+
+        border-radius: 0;
+
+        overflow: hidden;
+
+        box-shadow: none;
+
+        background:
+            var(--black);
+    }
+
+
+    .tools-title {
+
+        min-height:
+            48px;
+
+        padding:
+            0 18px;
+
+        color:
+            var(--yellow);
+
+        background:
+            var(--black);
+
+        border-bottom:
+            1px solid rgba(
+                255,
+                255,
+                255,
+                0.14
+            );
+    }
+
+
+    .calculator-tools-inner a {
+
+        min-height:
+            52px;
+
+        padding:
+            0 18px;
+
+        color:
+            var(--white);
+
+        background:
+            var(--black);
+
+        border-left: 0;
+
+        border-bottom:
+            1px solid rgba(
+                255,
+                255,
+                255,
+                0.14
+            );
+    }
+
+
+    .calculator-tools-inner a:last-child {
+
+        border-bottom: 0;
+    }
+
+
+    .calculator-tools-inner a:hover {
+
+        padding-left:
+            23px;
+
+        background:
+            rgba(
+                255,
+                255,
+                255,
+                0.06
+            );
+
+        color:
+            var(--yellow);
+    }
+
+
+    /* CALCULATOR SECTION */
+
+    .calculator-section {
+
+        padding:
+            65px 15px;
+    }
+
+
+    /* FULL SINGLE COLUMN CARD */
+
+    .calculator-card {
+
+        display: grid;
+
+        grid-template-columns:
+            1fr;
+
+        grid-template-rows:
+            auto auto auto;
+
+        width: 100%;
+
+        min-height: 0;
+
+        border-radius:
+            20px;
+
+        box-shadow:
+            7px 7px 0 var(--black);
+    }
+
+
+    /* NUMBER BAR */
+
+    .card-number {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+        width: 100%;
+
+        height: 58px;
+
+        min-height: 58px;
+
+        padding:
+            0 20px;
+
+        justify-content:
+            flex-start;
+
+        align-items:
+            center;
+
+        font-size: 15px;
+    }
+
+
+    /* INFORMATION */
+
+    .card-information {
+
+        grid-column: 1;
+
+        grid-row: 2;
+
+        width: 100%;
+
+        min-width: 0;
+
+        padding:
+            34px 22px;
+
+        border-right: 0;
+
+        border-bottom:
+            2px solid var(--black);
+    }
+
+
+    .card-information h2 {
+
+        font-size:
+            40px;
+
+        line-height:
+            1;
+
+        letter-spacing:
+            -2.2px;
+    }
+
+
+    .card-information > p {
+
+        max-width: 100%;
+
+        font-size:
+            14px;
+
+        line-height:
+            1.6;
+    }
+
+
+    /* FORMULA */
+
+    .formula-box {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            11px;
+
+        padding:
+            16px;
+    }
+
+
+    .formula-box b {
+
+        display: none;
+    }
+
+
+    .formula-box div {
+
+        padding-bottom:
+            9px;
+
+        border-bottom:
+            1px solid #dddddd;
+    }
+
+
+    .formula-box div:last-child {
+
+        padding-bottom: 0;
+
+        border-bottom: 0;
+    }
+
+
+    /* SAVINGS VISUAL */
+
+    .goal-box {
+
+        flex-direction:
+            column;
+
+        justify-content:
+            center;
+
+        align-items:
+            center;
+
+        min-height:
+            240px;
+
+        padding:
+            24px;
+    }
+
+
+    .goal-lines {
+
+        width:
+            100%;
+    }
+
+
+    /* CALCULATOR */
+
+    .calculator-box {
+
+        grid-column: 1;
+
+        grid-row: 3;
+
+        width: 100%;
+
+        min-width: 0;
+
+        padding:
+            30px 22px;
+    }
+
+
+    .calculator-box-title {
+
+        font-size: 9px;
+    }
+
+
+    /* STACK INPUTS */
+
+    .input-row {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            13px;
+    }
+
+
+    .input-group {
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .input-field {
+
+        width: 100%;
+
+        min-height:
+            50px;
+    }
+
+
+    .calculate-btn {
+
+        min-height:
+            51px;
+    }
+
+
+    .result-box {
+
+        min-height:
+            78px;
+    }
+
+
+    .result-box strong {
+
+        font-size:
+            21px;
+    }
+
+
+    /* CTA */
+
+    .final-cta {
+
+        min-height:
+            390px;
+
+        padding:
+            75px 18px 100px;
+    }
+
+
+    .cta-content h2 {
+
+        font-size:
+            43px;
+
+        letter-spacing:
+            -2.5px;
+    }
+
+
+    /* FOOTER */
+
+    .site-footer {
+
+        min-height:
+            650px;
+    }
+
+
+    .footer-curve {
+
+        height:
+            140px;
+    }
+
+
+    .footer-inner {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        padding:
+            100px 22px 35px;
+
+        gap:
+            35px 20px;
+    }
+
+
+    .footer-brand {
+
+        grid-column:
+            1 / -1;
+    }
+
+
+    .footer-column h4 {
+
+        font-size:
+            11px;
+    }
+
+
+    .footer-column a {
+
+        font-size:
+            13px;
+
+        margin-bottom:
+            14px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   550px DOWN
+========================================================= */
+
+@media (max-width: 550px) {
+
+    .calculator-section {
+
+        padding:
+            55px 13px;
+    }
+
+
+    .calculator-card {
+
+        box-shadow:
+            5px 5px 0 var(--black);
+    }
+
+
+    .card-number {
+
+        height:
+            55px;
+
+        min-height:
+            55px;
+
+        padding:
+            0 18px;
+    }
+
+
+    .card-information {
+
+        padding:
+            30px 19px;
+    }
+
+
+    .card-information h2 {
+
+        font-size:
+            35px;
+
+        letter-spacing:
+            -2px;
+    }
+
+
+    .card-information > p {
+
+        font-size:
+            14px;
+
+        margin-bottom:
+            25px;
+    }
+
+
+    .calculator-box {
+
+        padding:
+            27px 19px;
+    }
+
+
+    .formula-box {
+
+        padding:
+            14px;
+    }
+
+
+    .goal-box {
+
+        min-height:
+            220px;
+
+        padding:
+            20px;
+    }
+
+
+    .goal-circle {
+
+        width:
+            105px;
+
+        height:
+            105px;
+    }
+
+
+    .goal-circle div {
+
+        width:
+            73px;
+
+        height:
+            73px;
+    }
+
+
+    .spending-bar {
+
+        height:
+            30px;
+    }
+
+
+    .cta-content h2 {
+
+        font-size:
+            39px;
+    }
+
+
+    .footer-inner {
+
+        padding:
+            95px 20px 35px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   400px DOWN
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .calculator-tools {
+
+        padding:
+            0;
+    }
+
+
+    .calculator-tools-inner {
+
+        border-radius:
+            0;
+
+        background:
+            var(--black);
+    }
+
+
+    .tools-title {
+
+        padding:
+            0 16px;
+    }
+
+
+    .calculator-tools-inner a {
+
+        padding:
+            0 16px;
+
+        font-size:
+            12px;
+    }
+
+
+    .calculator-tools-inner a:hover {
+
+        padding-left:
+            21px;
+    }
+
+
+    .calculator-section {
+
+        padding-left:
+            10px;
+
+        padding-right:
+            10px;
+    }
+
+
+    .calculator-card {
+
+        border-radius:
+            18px;
+
+        box-shadow:
+            4px 4px 0 var(--black);
+    }
+
+
+    .card-information {
+
+        padding:
+            27px 17px;
+    }
+
+
+    .card-information h2 {
+
+        font-size:
+            32px;
+
+        letter-spacing:
+            -1.8px;
+    }
+
+
+    .calculator-box {
+
+        padding:
+            25px 17px;
+    }
+
+
+    .card-number {
+
+        height:
+            53px;
+
+        min-height:
+            53px;
+
+        padding-left:
+            17px;
+    }
+
+
+    .result-box strong {
+
+        font-size:
+            19px;
+    }
+
+
+    .result-symbol {
+
+        width:
+            39px;
+
+        height:
+            39px;
+    }
+
+
+    .footer-inner {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            95px 20px 35px;
+    }
+
+
+    .footer-brand {
+
+        grid-column:
+            auto;
+    }
+
+
+    .footer-column a {
+
+        font-size:
+            13px;
+    }
+
+}
+
+/* =========================================================
+   CALCULATORS PAGE STRUCTURE
+   HERO -> WHY IT MATTERS -> 3 CALCULATORS -> QUICK CHECK -> FINAL CTA
+========================================================= */
+
+/* =========================================================
+   HERO — SAME VISUAL STRUCTURE AS MONEY MISTAKES
+========================================================= */
+
+.calculator-hero {
+    width: 100%;
+    padding: 175px 20px 115px;
+    min-height: 0;
+    background: #ffffff;
+    text-align: center;
+    display: block;
+}
+
+.calculator-hero-inner {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calc-eyebrow {
+    display: block;
+    margin-bottom: 18px;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    margin: 0 auto;
+    max-width: 900px;
+    color: #111111;
+    font-size: clamp(56px, 7vw, 88px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+.hero-content h1 span {
+    color: #111111;
+}
+
+.hero-content p {
+    max-width: 500px;
+    margin: 30px auto 34px;
+    color: #5d5d5d;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: #ffca1a;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-button span {
+    font-size: 19px;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   WHY IT MATTERS — SAME YELLOW SECTION STRUCTURE AS MISTAKES
+========================================================= */
+
+.calculator-why {
+    width:
+        100%;
+
+    padding:
+        110px
+        0;
+
+    background:
+        #ffc400;
+
+    color:
+        #000000;
+
+    border:
+        0;
+}
+
+.calculator-why-inner {
+    display:
+        block;
+
+    width:
+        min(
+            1200px,
+            calc(100% - 40px)
+        );
+
+    margin:
+        0 auto;
+}
+
+.calculator-why-content {
+   max-width:
+        900px;
+
+    margin:
+        0 auto;
+
+    color:
+        #000000;
+
+    text-align:
+        left;
+}
+
+.calculator-why-content h2 {
+    margin:
+        0
+        0
+        30px;
+
+    color:
+        #000000;
+
+    font-size:
+        clamp(
+            40px,
+            5vw,
+            63px
+        );
+
+    line-height:
+        1.2;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -3px;
+}
+
+.calculator-why-content h2 span {
+    color: #000000;
+}
+
+.calculator-why-content p {
+    
+    max-width:
+        850px;
+
+    margin:
+        0
+        10px;
+
+    color:
+        #000000;
+        
+        margin: auto 0;
+
+    font-size:
+        17px;
+
+    line-height:
+        1.9;
+
+    text-align:
+        left;
+}
+
+/* =========================================================
+   THREE CALCULATORS
+   PLAIN WHITE — NO SECTION COLOR / WAVES / BACKGROUND SHAPES
+========================================================= */
+
+.calculator-item {
+    width: 100%;
+    padding: 95px 0;
+    background: #ffffff;
+    overflow: visible;
+}
+
+.calculator-item.calculator-section {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 95px 0;
+    background: #ffffff;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.calculator-item + .calculator-item {
+    padding-top: 0;
+}
+
+.calculator-item .calculator-section {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 0;
+    background: #ffffff;
+    overflow: visible;
+}
+
+.calculator-item .calculator-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   QUICK CHECK — SAME LIGHT-GRAY + WHITE ZIG-ZAG STRUCTURE AS MISTAKES
+========================================================= */
+
+.calculator-quick-check {
+    position: relative;
+    width: 100%;
+    padding: 175px 0 170px;
+    overflow: hidden;
+    background: #f5f5f4;
+    isolation: isolate;
+}
+
+.calculator-quick-check::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135px;
+    background: #ffffff;
+    clip-path: polygon(
+        0 0,
+        0 45%,
+        8% 80%,
+        16% 28%,
+        25% 72%,
+        34% 22%,
+        43% 76%,
+        52% 27%,
+        61% 73%,
+        70% 23%,
+        79% 78%,
+        88% 30%,
+        100% 67%,
+        100% 0
+    );
+    z-index: 0;
+}
+
+.calculator-quick-check::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 135px;
+    background: #ffffff;
+    clip-path: polygon(
+        0 100%,
+        0 64%,
+        9% 25%,
+        18% 75%,
+        27% 28%,
+        36% 79%,
+        45% 22%,
+        54% 75%,
+        63% 27%,
+        72% 80%,
+        81% 24%,
+        90% 73%,
+        100% 35%,
+        100% 100%
+    );
+    z-index: 0;
+}
+
+.calculator-quick-check-inner {
+    position: relative;
+    z-index: 1;
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.calculator-quick-copy {
+    text-align: left;
+}
+
+.calculator-quick-copy h2 {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(41px, 5vw, 63px);
+    line-height: 0.99;
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.calculator-quick-copy h2 span {
+    color: #0066ff;
+}
+
+.calculator-quick-copy p {
+    max-width: 480px;
+    margin: 27px 0 0;
+    color: #626262;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.calculator-quick-eyebrow {
+    display: block;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.calculator-quick-list {
+    border-top: 1px solid #111111;
+}
+
+.calculator-quick-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 22px;
+    padding: 26px 0;
+    border-bottom: 1px solid #111111;
+}
+
+.calculator-quick-item > span {
+    color: #111111;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.calculator-quick-item strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.calculator-quick-item p {
+    margin: 0;
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   FINAL CTA — SAME STRUCTURE AS MONEY MISTAKES
+========================================================= */
+
+.final-cta {
+    width: 100%;
+    min-height: 0;
+    padding: 135px 20px 150px;
+    background: #ffffff;
+    text-align: center;
+    display: block;
+}
+
+.cta-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(47px, 6vw, 70px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+.cta-eyebrow {
+    display: block;
+    margin-bottom: 18px;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cta-content p {
+    max-width: 620px;
+    margin: 26px auto 0;
+    color: #626262;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 999px;
+    background: #0066ff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .calculator-hero {
+        padding: 150px 20px 95px;
+    }
+
+    .calculator-hero-inner,
+    .calculator-why-inner,
+    .calculator-quick-check-inner {
+        width: calc(100% - 40px);
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .calculator-item {
+        padding: 90px 0;
+    }
+
+    .calculator-quick-check {
+        padding: 155px 0 150px;
+    }
+
+    .calculator-quick-check-inner {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .calculator-quick-copy {
+        text-align: center;
+    }
+
+    .calculator-quick-copy p {
+        margin: 27px auto 0;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .calculator-hero {
+        padding: 135px 15px 80px;
+    }
+
+    .calculator-hero-inner {
+        width: calc(100% - 30px);
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .calc-eyebrow {
+        margin-bottom: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 52px;
+        line-height: 1.02;
+        letter-spacing: -3px;
+    }
+
+    .hero-content p {
+        max-width: 520px;
+        margin: 25px auto 30px;
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .hero-button {
+        margin: 0 auto;
+    }
+
+    /* WHY IT MATTERS */
+    .calculator-why {
+        padding: 75px 0;
+    }
+
+    .calculator-why-inner {
+        width: calc(100% - 30px);
+    }
+
+    .calculator-why-content {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .calculator-why-content h2 {
+        font-size: 36px;
+        line-height: 1.15;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+
+    .calculator-why-content p {
+        max-width: 520px;
+        padding: 0 20px;
+        margin: 0 auto 17px;
+        font-size: 13px;
+        line-height: 1.9;
+        text-align: center;
+    }
+
+    /* THREE CALCULATORS — PLAIN WHITE */
+    .calculator-item {
+        padding: 65px 0;
+    }
+
+    .calculator-item.calculator-section {
+        padding: 65px 0;
+    }
+
+    .calculator-item + .calculator-item {
+        padding-top: 0;
+    }
+
+    .calculator-item .calculator-section {
+        width: calc(100% - 30px);
+    }
+
+    /* QUICK CHECK */
+    .calculator-quick-check {
+        padding: 135px 0 130px;
+    }
+
+    .calculator-quick-check::before,
+    .calculator-quick-check::after {
+        height: 85px;
+    }
+
+    .calculator-quick-check-inner {
+        width: calc(100% - 30px);
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .calculator-quick-copy {
+        text-align: center;
+    }
+
+    .calculator-quick-copy h2 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+
+    .calculator-quick-copy p {
+        max-width: 520px;
+        margin: 25px auto 0;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .calculator-quick-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .calculator-quick-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 23px 0;
+        text-align: center;
+    }
+
+    .calculator-quick-item > span {
+        display: block;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    .calculator-quick-item strong {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .calculator-quick-item p {
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+        padding: 90px 15px 100px;
+        text-align: center;
+    }
+
+    .cta-content {
+        max-width: 650px;
+    }
+
+    .cta-content h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -2.5px;
+    }
+
+    .cta-content p {
+        max-width: 520px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .cta-button {
+        margin-top: 30px;
+    }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .calculator-hero {
+        padding: 125px 13px 70px;
+    }
+
+    .calculator-hero-inner {
+        width: calc(100% - 20px);
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+        letter-spacing: -2.5px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .calculator-why {
+        padding: 65px 0;
+    }
+
+    .calculator-why-inner {
+        width: calc(100% - 20px);
+    }
+
+    .calculator-why-content h2 {
+        font-size: 36px;
+    }
+
+    .calculator-item {
+        padding: 55px 0;
+    }
+
+    .calculator-item.calculator-section {
+        padding: 55px 0;
+    }
+
+    .calculator-item .calculator-section {
+        width: calc(100% - 20px);
+    }
+
+    .calculator-quick-check {
+        padding: 120px 0 115px;
+    }
+
+    .calculator-quick-check::before,
+    .calculator-quick-check::after {
+        height: 70px;
+    }
+
+    .calculator-quick-copy h2 {
+        font-size: 36px;
+    }
+
+    .cta-content h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================================================
+   BUDGETBASICS AI ASSISTANT
+   COMPLETE / FIXED VERSION
+========================================================= */
+
+
+/* =========================================================
+   WIDGET BASE
+========================================================= */
+
+.ai-assistant-widget {
+    position: static;
+
+    width: 0;
+    height: 0;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: auto;
+}
+
+
+/* =========================================================
+   WEBSITE BLUR
+   This directly blurs the website content when the
+   chatbot panel is active.
+========================================================= */
+
+body > *:not(.ai-assistant-widget) {
+    transition:
+        filter 0.28s ease;
+}
+
+
+/* Modern browsers */
+
+body:has(.ai-assistant-panel.active) > *:not(.ai-assistant-widget) {
+    filter: blur(5px);
+}
+
+
+/* =========================================================
+   BACKDROP / DIM LAYER
+========================================================= */
+
+.ai-assistant-backdrop {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        rgba(18, 15, 25, 0.20);
+
+    backdrop-filter:
+        blur(2px);
+
+    -webkit-backdrop-filter:
+        blur(2px);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.28s ease,
+        visibility 0.28s ease;
+
+    z-index: 9998;
+}
+
+
+.ai-assistant-backdrop.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   FLOATING LAUNCHER
+========================================================= */
+
+.ai-assistant-launcher {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    width: 68px;
+    height: 68px;
+
+    padding: 0;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.95);
+
+    border-radius: 21px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    color: #211b2c;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.14),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+
+    backdrop-filter:
+        blur(14px);
+
+    -webkit-backdrop-filter:
+        blur(14px);
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+
+    z-index: 10000;
+}
+
+
+.ai-assistant-launcher:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(0, 102, 255, 0.20);
+
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.17),
+        0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.ai-assistant-launcher:focus-visible {
+    outline:
+        3px solid
+        rgba(0, 102, 255, 0.20);
+
+    outline-offset:
+        4px;
+}
+
+
+/* =========================================================
+   BOT BADGE
+========================================================= */
+
+.ai-launcher-badge {
+    position: relative;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 15px;
+
+    background:
+        #f1f6ff;
+
+    color:
+        #0066ff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform 0.22s ease,
+        background 0.22s ease,
+        opacity 0.20s ease;
+}
+
+
+.ai-assistant-launcher:hover
+.ai-launcher-badge {
+    background:
+        #e9f1ff;
+
+    transform:
+        scale(1.04);
+}
+
+
+/* =========================================================
+   ROBOT ICON
+========================================================= */
+
+.ai-launcher-icon {
+    width: 25px;
+    height: 25px;
+
+    display: block;
+
+    transition:
+        opacity 0.20s ease,
+        transform 0.22s ease;
+}
+
+
+/* =========================================================
+   ONLINE DOT
+========================================================= */
+
+.ai-status-dot {
+    position: absolute;
+
+    top: -2px;
+    right: -2px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background:
+        #35c759;
+
+    border:
+        2px solid
+        #ffffff;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   LAUNCHER CLOSE ICON
+========================================================= */
+
+.ai-launcher-close {
+    position: absolute;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 15px;
+
+    background:
+        #f1f6ff;
+
+    color:
+        #0066ff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+
+    line-height: 1;
+
+    opacity: 0;
+
+    transform:
+        scale(0.70)
+        rotate(-18deg);
+
+    transition:
+        opacity 0.20s ease,
+        transform 0.22s ease;
+}
+
+
+.ai-assistant-launcher.active
+.ai-launcher-badge {
+    opacity: 0;
+
+    transform:
+        scale(0.70)
+        rotate(18deg);
+}
+
+
+.ai-assistant-launcher.active
+.ai-launcher-close {
+    opacity: 1;
+
+    transform:
+        scale(1)
+        rotate(0);
+}
+
+
+/* =========================================================
+   HOVER LABEL
+========================================================= */
+
+.ai-launcher-label {
+    position: absolute;
+
+    right: 79px;
+    top: 50%;
+
+    transform:
+        translateY(-50%)
+        translateX(8px);
+
+    padding:
+        9px
+        13px;
+
+    white-space: nowrap;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.95);
+
+    border-radius: 11px;
+
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    color:
+        #211b2c;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.10);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.20s ease,
+        transform 0.20s ease;
+
+    z-index: 10001;
+}
+
+
+.ai-assistant-launcher:hover
+.ai-launcher-label,
+.ai-assistant-launcher:focus-visible
+.ai-launcher-label {
+    opacity: 1;
+
+    transform:
+        translateY(-50%)
+        translateX(0);
+}
+
+
+.ai-assistant-launcher.active
+.ai-launcher-label {
+    opacity: 0;
+}
+
+
+/* =========================================================
+   CHAT PANEL
+========================================================= */
+
+.ai-assistant-panel {
+    position: fixed;
+
+    right: 24px;
+    bottom: 108px;
+
+    width: 380px;
+
+    max-width:
+        calc(100vw - 32px);
+
+    height: 535px;
+
+    max-height:
+        calc(100vh - 130px);
+
+    overflow: hidden;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        #e7e7e7;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow:
+        0 28px 75px rgba(0, 0, 0, 0.23),
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        translateY(18px)
+        scale(0.96);
+
+    transform-origin:
+        bottom right;
+
+    transition:
+        opacity 0.24s ease,
+        visibility 0.24s ease,
+        transform 0.24s ease;
+
+    z-index: 10001;
+}
+
+
+.ai-assistant-panel.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   CHAT HEADER
+========================================================= */
+
+.ai-assistant-header {
+    width: 100%;
+
+    flex-shrink: 0;
+
+    padding:
+        16px
+        17px;
+
+    background:
+        #ffffff;
+
+    border-bottom:
+        1px solid
+        #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ai-assistant-title-wrap {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+/* =========================================================
+   HEADER BOT AVATAR
+========================================================= */
+
+.ai-assistant-avatar {
+    width: 41px;
+    height: 41px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background:
+        #f1f6ff;
+
+    color:
+        #0066ff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ai-assistant-avatar svg {
+    display: block;
+}
+
+
+/* =========================================================
+   HEADER TEXT
+========================================================= */
+
+.ai-assistant-title-wrap h3 {
+    margin: 0;
+
+    color:
+        #211b2c;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+
+.ai-assistant-title-wrap span {
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+        #8a8a8a;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   CHAT CLOSE
+========================================================= */
+
+.ai-assistant-close {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        transparent;
+
+    color:
+        #666666;
+
+    font-size: 26px;
+
+    line-height: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        background 0.20s ease,
+        color 0.20s ease;
+}
+
+
+.ai-assistant-close:hover {
+    background:
+        #f3f3f3;
+
+    color:
+        #211b2c;
+}
+
+
+/* =========================================================
+   MESSAGE AREA
+========================================================= */
+
+.ai-assistant-messages {
+    flex: 1;
+
+    min-height: 0;
+
+    padding:
+        18px
+        15px;
+
+    overflow-y: auto;
+
+    background:
+        #f7f7f7;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.ai-assistant-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+.ai-assistant-messages::-webkit-scrollbar-track {
+    background:
+        transparent;
+}
+
+
+.ai-assistant-messages::-webkit-scrollbar-thumb {
+    background:
+        #c8c8c8;
+
+    border-radius:
+        10px;
+}
+
+
+/* =========================================================
+   MESSAGE ROW
+========================================================= */
+
+.ai-message {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    max-width: 96%;
+}
+
+
+.ai-message-bot {
+    align-self: flex-start;
+}
+
+
+.ai-message-user {
+    align-self: flex-end;
+
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   MESSAGE AVATAR
+========================================================= */
+
+.ai-message-avatar {
+    width: 28px;
+    height: 28px;
+
+    flex-shrink: 0;
+
+    margin-top: 2px;
+
+    border-radius: 50%;
+
+    background:
+        #0066ff;
+
+    color:
+        #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+
+.ai-message-user
+.ai-message-avatar {
+    background:
+        #211b2c;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   MESSAGE BUBBLE
+========================================================= */
+
+.ai-message-bubble {
+    max-width: 280px;
+
+    padding:
+        11px
+        13px;
+
+    border-radius: 14px;
+
+    color:
+        #211b2c;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+}
+
+
+.ai-message-bot
+.ai-message-bubble {
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        #e7e7e7;
+
+    border-top-left-radius:
+        5px;
+}
+
+
+.ai-message-user
+.ai-message-bubble {
+    background:
+        #0066ff;
+
+    color:
+        #ffffff;
+
+    border-top-right-radius:
+        5px;
+}
+
+
+/* =========================================================
+   QUICK QUESTIONS
+========================================================= */
+
+.ai-quick-start {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding-left: 37px;
+}
+
+
+.ai-quick-button {
+    padding:
+        8px
+        11px;
+
+    border:
+        1px solid
+        #dfe3eb;
+
+    border-radius:
+        999px;
+
+    background:
+        #ffffff;
+
+    color:
+        #211b2c;
+
+    font-family:
+        inherit;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    transition:
+        border-color 0.20s ease,
+        color 0.20s ease,
+        background 0.20s ease;
+}
+
+
+.ai-quick-button:hover {
+    border-color:
+        #0066ff;
+
+    color:
+        #0066ff;
+
+    background:
+        #f7faff;
+}
+
+
+/* =========================================================
+   TYPING
+========================================================= */
+
+.ai-typing {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+}
+
+
+.ai-typing-dots {
+    min-width: 49px;
+
+    padding:
+        11px
+        13px;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        #e7e7e7;
+
+    border-radius:
+        14px;
+
+    border-top-left-radius:
+        5px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.ai-typing-dots span {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background:
+        #888888;
+
+    animation:
+        aiTyping 1.1s infinite ease-in-out;
+}
+
+
+.ai-typing-dots span:nth-child(2) {
+    animation-delay:
+        0.15s;
+}
+
+
+.ai-typing-dots span:nth-child(3) {
+    animation-delay:
+        0.30s;
+}
+
+
+@keyframes aiTyping {
+
+    0%,
+    60%,
+    100% {
+        opacity: 0.35;
+
+        transform:
+            translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+
+        transform:
+            translateY(-2px);
+    }
+}
+
+
+/* =========================================================
+   INPUT AREA
+========================================================= */
+
+.ai-assistant-input-area {
+    flex-shrink: 0;
+
+    padding:
+        12px;
+
+    background:
+        #ffffff;
+
+    border-top:
+        1px solid
+        #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.ai-assistant-input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 44px;
+
+    padding:
+        0
+        14px;
+
+    border:
+        1px solid
+        #dddddd;
+
+    border-radius:
+        999px;
+
+    outline:
+        none;
+
+    background:
+        #ffffff;
+
+    color:
+        #211b2c;
+
+    font-family:
+        inherit;
+
+    font-size:
+        13px;
+
+    transition:
+        border-color 0.20s ease,
+        box-shadow 0.20s ease;
+}
+
+
+.ai-assistant-input::placeholder {
+    color:
+        #999999;
+}
+
+
+.ai-assistant-input:focus {
+    border-color:
+        #0066ff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(0, 102, 255, 0.08);
+}
+
+
+/* =========================================================
+   SEND BUTTON
+========================================================= */
+
+.ai-assistant-send {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        #0066ff;
+
+    color:
+        #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor:
+        pointer;
+
+    transition:
+        background 0.20s ease,
+        transform 0.20s ease;
+}
+
+
+.ai-assistant-send:hover {
+    background:
+        #0052cc;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.ai-assistant-send svg {
+    display: block;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    body:has(.ai-assistant-panel.active)
+    > *:not(.ai-assistant-widget) {
+        filter:
+            blur(4px);
+    }
+
+
+    .ai-assistant-backdrop {
+        background:
+            rgba(18, 15, 25, 0.22);
+
+        backdrop-filter:
+            blur(2px);
+
+        -webkit-backdrop-filter:
+            blur(2px);
+    }
+
+
+    .ai-assistant-launcher {
+        right: 16px;
+        bottom: 16px;
+
+        width: 60px;
+        height: 60px;
+
+        border-radius: 18px;
+    }
+
+
+    .ai-launcher-badge,
+    .ai-launcher-close {
+        width: 42px;
+        height: 42px;
+
+        border-radius: 13px;
+    }
+
+
+    .ai-launcher-icon {
+        width: 23px;
+        height: 23px;
+    }
+
+
+    .ai-launcher-label {
+        display: none;
+    }
+
+
+    .ai-assistant-panel {
+        right: 12px;
+        left: 12px;
+
+        bottom: 88px;
+
+        width:
+            auto;
+
+        max-width:
+            none;
+
+        height:
+            500px;
+
+        max-height:
+            calc(100vh - 108px);
+
+        border-radius:
+            19px;
+    }
+
+
+    .ai-assistant-messages {
+        padding:
+            15px
+            12px;
+    }
+
+
+    .ai-message-bubble {
+        max-width:
+            235px;
+    }
+
+
+    .ai-quick-start {
+        padding-left:
+            37px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    body:has(.ai-assistant-panel.active)
+    > *:not(.ai-assistant-widget) {
+        filter:
+            blur(3px);
+    }
+
+
+    .ai-assistant-launcher {
+        right: 12px;
+        bottom: 12px;
+
+        width: 56px;
+        height: 56px;
+    }
+
+
+    .ai-launcher-badge,
+    .ai-launcher-close {
+        width: 39px;
+        height: 39px;
+
+        border-radius: 12px;
+    }
+
+
+    .ai-launcher-icon {
+        width: 21px;
+        height: 21px;
+    }
+
+
+    .ai-assistant-panel {
+        right: 8px;
+        left: 8px;
+
+        bottom: 78px;
+
+        height: 470px;
+    }
+
+
+    .ai-assistant-header {
+        padding:
+            14px
+            13px;
+    }
+
+
+    .ai-assistant-input-area {
+        padding:
+            10px;
+    }
+
+
+    .ai-message-bubble {
+        max-width:
+            210px;
+
+        font-size:
+            12px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    body > *:not(.ai-assistant-widget),
+
+    .ai-assistant-backdrop,
+    .ai-assistant-launcher,
+    .ai-launcher-badge,
+    .ai-launcher-close,
+    .ai-launcher-label,
+    .ai-assistant-panel,
+    .ai-assistant-send,
+    .ai-assistant-close,
+    .ai-quick-button {
+        transition:
+            none;
+    }
+
+
+    .ai-typing-dots span {
+        animation:
+            none;
+    }
+}
